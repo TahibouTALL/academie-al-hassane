@@ -1,0 +1,1887 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Académie Al Hassane · Cours de Sciences Physiques en ligne et livres corrigés</title>
+<meta name="description" content="Cours en ligne de Sciences Physiques avec M. Ba, de la 3ème à la Terminale S. Livres d'exercices corrigés de physique et de chimie, test de niveau gratuit et inscription sur WhatsApp.">
+<link rel="canonical" href="https://www.academie-al-hassane.com/">
+<meta name="theme-color" content="#F7F8FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1814" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Académie Al Hassane">
+<meta property="og:title" content="Académie Al Hassane · Sciences Physiques avec M. Ba">
+<meta property="og:description" content="Cours en ligne, livres d'exercices corrigés et test de niveau, de la 3ème à la Terminale S.">
+<meta property="og:url" content="https://www.academie-al-hassane.com/">
+<meta property="og:image" content="https://www.academie-al-hassane.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Académie Al Hassane : en physique-chimie, chaque exercice a sa méthode.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "EducationalOrganization", "name": "Académie Al Hassane", "url": "https://www.academie-al-hassane.com/", "description": "Cours en ligne de Sciences Physiques avec M. Ba, de la 3ème à la Terminale S. Livres d'exercices corrigés de physique et de chimie, test de niveau gratuit et inscription sur WhatsApp.", "telephone": "+221772733435", "areaServed": "SN", "inLanguage": "fr", "logo": "https://www.academie-al-hassane.com/apple-touch-icon.png"}</script>
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" media="print" data-fonts href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Kalam:wght@400;700&family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap">
+<style>
+/* Layout : un cahier de sciences physiques. Fond à petits carreaux, courbes sur papier millimétré,
+   encre bleue pour le texte, stylo rouge pour les corrections. En sombre, la page devient un tableau noir.
+   Colonne de 74rem, en-tête collant, vues par ancre (#accueil, #livres...). */
+:root {
+  --paper: #F7F8FB;
+  --sheet: #FFFFFF;
+  --ink: #101B3F;
+  --ink-soft: #4A5472;
+  --blue: #2442A8;
+  --red: #C41E3A;
+  --pink: #F8D9E0;
+  --ok: #1B6C46;
+  --warn: #8A5800;
+  --wa: #17784A;
+  --wa-ink: #FFFFFF;
+  --rule: rgba(16, 27, 63, .13);
+  --rule-strong: rgba(16, 27, 63, .30);
+  --sq: rgba(36, 66, 168, .055);
+  --mm: rgba(214, 108, 46, .16);
+  --mm-major: rgba(214, 108, 46, .34);
+  --tint-blue: rgba(36, 66, 168, .07);
+  --tint-red: rgba(196, 30, 58, .07);
+  --tint-ok: rgba(27, 108, 70, .09);
+  --foot-bg: #0F1A3C;
+  --foot-ink: #E6EAF5;
+  --foot-soft: #A9B2CC;
+  --page-bg: #FFFFFF;
+  --page-ink: #16181D;
+  --page-pink: #F6D2DA;
+  --page-red: #C41E3A;
+  --shadow: 0 1px 0 rgba(16, 27, 63, .05), 0 22px 44px -28px rgba(16, 27, 63, .50);
+  --show-board: inline;
+  --show-note: none;
+  --mode-name: cahier;
+
+  /* Objets (couvertures de livres) : mêmes couleurs dans les deux thèmes */
+  --cover-phys: #1A2A61;
+  --cover-chim: #6C1A2B;
+  --cover-dev: #FCFCF9;
+  --cover-ink: #F2F4FF;
+  --cover-dev-ink: #1A2452;
+  --cover-line: #BCC9EE;
+  --cover-margin: #E0505E;
+
+  --display: "STIX Two Text", "STIX Two", Cambria, "Times New Roman", serif;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --hand: "Kalam", "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+  --page-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+  --fs-xs: .8125rem;
+  --fs-sm: .9375rem;
+  --fs-base: 1.0625rem;
+  --fs-md: 1.25rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: clamp(1.85rem, 1.35rem + 1.7vw, 2.55rem);
+  --fs-hero: clamp(2.3rem, 1.45rem + 3.3vw, 3.85rem);
+  --wrap: 76rem;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0D1814; --sheet: #13211C; --ink: #E6ECE7; --ink-soft: #A3B3AA; --blue: #A4BCFF; --red: #FF8D8D;
+    --pink: #43282E; --ok: #82D3A6; --warn: #F0C46E; --wa: #4CC489; --wa-ink: #05200F;
+    --rule: rgba(230, 236, 231, .13); --rule-strong: rgba(230, 236, 231, .27); --sq: rgba(230, 236, 231, .035);
+    --mm: rgba(240, 170, 120, .10); --mm-major: rgba(240, 170, 120, .22);
+    --tint-blue: rgba(164, 188, 255, .09); --tint-red: rgba(255, 141, 141, .09); --tint-ok: rgba(130, 211, 166, .10);
+    --foot-bg: #08110D; --foot-ink: #D9E2DB; --foot-soft: #8FA096;
+    --page-bg: #E8EBE5; --page-ink: #15171B; --page-pink: #EBC6CF; --page-red: #B51C35;
+    --shadow: 0 1px 0 rgba(0, 0, 0, .35), 0 22px 44px -26px rgba(0, 0, 0, .9);
+    --show-board: none; --show-note: inline; --mode-name: tableau;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0D1814; --sheet: #13211C; --ink: #E6ECE7; --ink-soft: #A3B3AA; --blue: #A4BCFF; --red: #FF8D8D;
+  --pink: #43282E; --ok: #82D3A6; --warn: #F0C46E; --wa: #4CC489; --wa-ink: #05200F;
+  --rule: rgba(230, 236, 231, .13); --rule-strong: rgba(230, 236, 231, .27); --sq: rgba(230, 236, 231, .035);
+  --mm: rgba(240, 170, 120, .10); --mm-major: rgba(240, 170, 120, .22);
+  --tint-blue: rgba(164, 188, 255, .09); --tint-red: rgba(255, 141, 141, .09); --tint-ok: rgba(130, 211, 166, .10);
+  --foot-bg: #08110D; --foot-ink: #D9E2DB; --foot-soft: #8FA096;
+  --page-bg: #E8EBE5; --page-ink: #15171B; --page-pink: #EBC6CF; --page-red: #B51C35;
+  --shadow: 0 1px 0 rgba(0, 0, 0, .35), 0 22px 44px -26px rgba(0, 0, 0, .9);
+  --show-board: none; --show-note: inline; --mode-name: tableau;
+  color-scheme: dark;
+}
+/* Choix fait avec le bouton Cahier / Tableau du site */
+body[data-mode="tableau"] {
+  --paper: #0D1814; --sheet: #13211C; --ink: #E6ECE7; --ink-soft: #A3B3AA; --blue: #A4BCFF; --red: #FF8D8D;
+  --pink: #43282E; --ok: #82D3A6; --warn: #F0C46E; --wa: #4CC489; --wa-ink: #05200F;
+  --rule: rgba(230, 236, 231, .13); --rule-strong: rgba(230, 236, 231, .27); --sq: rgba(230, 236, 231, .035);
+  --mm: rgba(240, 170, 120, .10); --mm-major: rgba(240, 170, 120, .22);
+  --tint-blue: rgba(164, 188, 255, .09); --tint-red: rgba(255, 141, 141, .09); --tint-ok: rgba(130, 211, 166, .10);
+  --foot-bg: #08110D; --foot-ink: #D9E2DB; --foot-soft: #8FA096;
+  --page-bg: #E8EBE5; --page-ink: #15171B; --page-pink: #EBC6CF; --page-red: #B51C35;
+  --shadow: 0 1px 0 rgba(0, 0, 0, .35), 0 22px 44px -26px rgba(0, 0, 0, .9);
+  --show-board: none; --show-note: inline; --mode-name: tableau;
+  color-scheme: dark;
+}
+body[data-mode="cahier"] {
+  --paper: #F7F8FB; --sheet: #FFFFFF; --ink: #101B3F; --ink-soft: #4A5472; --blue: #2442A8; --red: #C41E3A;
+  --pink: #F8D9E0; --ok: #1B6C46; --warn: #8A5800; --wa: #17784A; --wa-ink: #FFFFFF;
+  --rule: rgba(16, 27, 63, .13); --rule-strong: rgba(16, 27, 63, .30); --sq: rgba(36, 66, 168, .055);
+  --mm: rgba(214, 108, 46, .16); --mm-major: rgba(214, 108, 46, .34);
+  --tint-blue: rgba(36, 66, 168, .07); --tint-red: rgba(196, 30, 58, .07); --tint-ok: rgba(27, 108, 70, .09);
+  --foot-bg: #0F1A3C; --foot-ink: #E6EAF5; --foot-soft: #A9B2CC;
+  --page-bg: #FFFFFF; --page-ink: #16181D; --page-pink: #F6D2DA; --page-red: #C41E3A;
+  --shadow: 0 1px 0 rgba(16, 27, 63, .05), 0 22px 44px -28px rgba(16, 27, 63, .50);
+  --show-board: inline; --show-note: none; --mode-name: cahier;
+  color-scheme: light;
+}
+
+/* Base */
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--body);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--sq) 1px, transparent 1px),
+    linear-gradient(90deg, var(--sq) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 30; background: var(--paper);
+}
+img, svg { max-width: 100%; }
+a { color: var(--blue); text-underline-offset: .18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; border-radius: 2px; }
+h1[tabindex="-1"]:focus, h2[tabindex="-1"]:focus, p[tabindex="-1"]:focus, main:focus { outline: none; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.12; margin: 0; text-wrap: balance; letter-spacing: -.005em; }
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-md); line-height: 1.25; }
+p { margin: 0; text-wrap: pretty; }
+ul, ol { margin: 0; }
+i { font-family: var(--display); font-style: italic; }
+sub, sup { font-size: .72em; line-height: 0; }
+.f { font-family: var(--display); white-space: nowrap; }
+.chem { font-family: var(--display); white-space: nowrap; }
+.frac { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; font-size: .9em; line-height: 1.15; margin: 0 .12em; }
+.frac > span { padding: 0 .12em; }
+.frac > span + span { border-top: 1px solid currentColor; }
+.sqrt { white-space: nowrap; }
+.sqrt > .rad { border-top: 1px solid currentColor; padding: 0 .08em; margin-left: .02em; }
+.vec { position: relative; display: inline-block; }
+.vec::before { content: "\2192"; position: absolute; left: 50%; top: -.5em; transform: translateX(-42%) scaleX(.95); font-size: .62em; font-style: normal; line-height: 1; }
+.hand { font-family: var(--hand); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 50; background: var(--ink); color: var(--sheet); padding: .6rem .9rem; border-radius: 4px; font-weight: 700; }
+.skip:focus { top: calc(10px + env(safe-area-inset-top, 0px)); }
+.nb { white-space: nowrap; }
+
+.wrap {
+  width: 100%; max-width: var(--wrap); margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (min-width: 760px) {
+  .wrap {
+    padding-left: max(32px, env(safe-area-inset-left, 0px));
+    padding-right: max(32px, env(safe-area-inset-right, 0px));
+  }
+}
+.eyebrow { font-size: var(--fs-xs); font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--blue); }
+.lead { font-size: 1.1875rem; line-height: 1.55; color: var(--ink-soft); max-width: 36em; }
+.sec { padding-block: clamp(3.25rem, 2.2rem + 3.6vw, 5.25rem); }
+.sec + .sec { border-top: 1px solid var(--rule); }
+.sec-head { display: grid; gap: .8rem; max-width: 44rem; margin-bottom: clamp(1.75rem, 1.3rem + 2vw, 3rem); }
+.sec-head p { color: var(--ink-soft); }
+
+/* Boutons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+  padding: .85rem 1.2rem; border-radius: var(--radius); border: 1.5px solid transparent;
+  font: 700 var(--fs-sm)/1.15 var(--body); text-decoration: none; cursor: pointer; text-align: center;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease, border-color .15s ease;
+}
+.btn svg { width: 1.15em; height: 1.15em; flex: none; }
+.btn-primary { background: var(--ink); color: var(--sheet); box-shadow: 3px 3px 0 var(--red); }
+.btn-primary:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--red); text-decoration: none; }
+.btn-primary:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--red); }
+.btn-ghost { background: transparent; color: var(--ink); border-color: var(--rule-strong); }
+.btn-ghost:hover { border-color: var(--ink); background: var(--tint-blue); text-decoration: none; }
+.btn-sm { padding: .6rem .9rem; font-size: var(--fs-xs); }
+.btn-row { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; }
+.link-more { font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: .35rem; }
+.link-more::after { content: "\2192"; transition: transform .15s ease; }
+.link-more:hover::after { transform: translateX(3px); }
+
+/* Bandeau et en-tête */
+.topbar { background: var(--paper); border-bottom: 1px solid var(--rule); font-size: var(--fs-xs); color: var(--ink-soft); }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .45rem; }
+.topbar a { color: var(--ink); font-weight: 700; text-decoration: none; font-variant-numeric: tabular-nums; }
+@media (max-width: 680px) { .topbar-left { display: none; } .topbar .wrap { justify-content: center; } }
+
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 25; background: var(--paper); border-bottom: 1px solid var(--rule); }
+@supports (backdrop-filter: blur(4px)) and (background: color-mix(in srgb, red 50%, blue)) {
+  .site-header { background: color-mix(in srgb, var(--paper) 86%, transparent); backdrop-filter: saturate(1.2) blur(10px); -webkit-backdrop-filter: saturate(1.2) blur(10px); }
+}
+.header-in { display: flex; align-items: center; gap: 1rem; min-height: 4.25rem; }
+.logo { display: inline-flex; align-items: center; gap: .5rem; color: var(--ink); text-decoration: none; flex: none; }
+.logo-acad { font: 700 .7rem/1 var(--body); letter-spacing: .16em; text-transform: uppercase; }
+.logo-name { font: 600 1.35rem/1 var(--display); letter-spacing: -.01em; }
+.tile-logo { position: relative; display: inline-grid; place-items: center; width: 2.4rem; height: 2.4rem; border: 1.5px solid var(--ink); border-radius: 3px; background: var(--sheet); }
+.tile-logo .z { position: absolute; top: .16rem; left: .22rem; font: 700 .52rem/1 var(--body); }
+.tile-logo .sym { font: 700 1.2rem/1 var(--display); margin-top: .2rem; }
+.nav { margin-left: auto; }
+.nav ul { list-style: none; display: flex; gap: .15rem; margin: 0; padding: 0; }
+.nav a { position: relative; display: block; padding: .55rem .7rem; color: var(--ink); text-decoration: none; font-weight: 700; font-size: var(--fs-sm); border-radius: 4px; white-space: nowrap; }
+.nav a:hover { background: var(--tint-blue); }
+.nav a[aria-current="page"]::after { content: ""; position: absolute; left: .7rem; right: .7rem; bottom: .3rem; height: 2px; background: var(--red); border-radius: 2px; transform: rotate(-1deg); }
+.header-actions { display: flex; align-items: center; gap: .5rem; flex: none; }
+.icon-btn { display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem; border: 1.5px solid var(--rule-strong); border-radius: var(--radius); background: transparent; color: var(--ink); cursor: pointer; padding: 0; }
+.icon-btn:hover { border-color: var(--ink); }
+.icon-btn svg { width: 1.25rem; height: 1.25rem; }
+.mode-btn .i-board { display: var(--show-board); }
+.mode-btn .i-note { display: var(--show-note); }
+.menu-btn { display: none; gap: .45rem; width: auto; padding: 0 .8rem; font: 700 var(--fs-sm) var(--body); }
+@media (max-width: 1100px) {
+  .menu-btn { display: inline-flex; align-items: center; }
+  .header-actions { margin-left: auto; }
+  .nav { position: absolute; top: 100%; left: 0; right: 0; margin: 0; background: var(--paper); border-bottom: 1px solid var(--rule); box-shadow: var(--shadow); display: none; }
+  .nav.open { display: block; }
+  .nav ul { flex-direction: column; gap: 0; padding-block: .25rem .9rem; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  .nav a { padding: .85rem .25rem; font-size: var(--fs-base); border-bottom: 1px solid var(--rule); border-radius: 0; }
+  .nav a[aria-current="page"]::after { left: .25rem; right: auto; width: 2.4rem; bottom: .5rem; }
+}
+@media (max-width: 460px) { .hdr-cta { display: none; } .logo-acad { display: none; } }
+
+/* Vues */
+.view[hidden] { display: none !important; }
+.view.enter { animation: viewIn .28s ease both; }
+@keyframes viewIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* Accueil : hero */
+.hero { padding-block: clamp(2.25rem, 1.4rem + 4vw, 4.75rem) clamp(3rem, 2rem + 4vw, 5.5rem); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); gap: clamp(2rem, 1rem + 4vw, 4.5rem); align-items: center; }
+@media (max-width: 980px) { .hero-grid { grid-template-columns: minmax(0, 1fr); } }
+.hero-copy { display: grid; gap: 1.35rem; min-width: 0; }
+.hero h1 { font-size: var(--fs-hero); letter-spacing: -.014em; line-height: 1.06; }
+.mark { position: relative; font-style: italic; white-space: nowrap; }
+.squiggle { position: absolute; left: -.03em; bottom: -.16em; width: calc(100% + .06em); height: .32em; overflow: visible; pointer-events: none; }
+.squiggle path { fill: none; stroke: var(--red); stroke-width: 3.4; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 0; animation: pen .9s .35s cubic-bezier(.6, 0, .3, 1) both; }
+@keyframes pen { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+.hero-note { font-size: var(--fs-sm); color: var(--ink-soft); }
+
+.plot-card { margin: 0; min-width: 0; background: var(--sheet); border: 1px solid var(--rule); border-radius: 3px; box-shadow: var(--shadow); padding: clamp(.75rem, .45rem + 1vw, 1.2rem); }
+.banner { display: flex; align-items: stretch; border: 3px double var(--ink); }
+.banner .code { background: var(--pink); padding: .3rem .7rem; font-weight: 700; border-right: 1.5px solid var(--ink); font-variant-numeric: tabular-nums; display: grid; place-items: center; }
+.banner .title { padding: .35rem .75rem; font-weight: 700; font-size: var(--fs-sm); align-self: center; min-width: 0; }
+.plot-svg { margin-top: .5rem; }
+.plot-svg svg { display: block; width: 100%; height: auto; }
+.plot-tabs { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .35rem; }
+.plot-tabs button { font: 700 var(--fs-xs) var(--body); padding: .5rem .8rem; border-radius: 999px; border: 1.5px solid var(--rule-strong); background: transparent; color: var(--ink); cursor: pointer; }
+.plot-tabs button:hover { border-color: var(--ink); }
+.plot-tabs button[aria-selected="true"] { background: var(--ink); color: var(--sheet); border-color: var(--ink); }
+.plot-card figcaption { margin-top: .75rem; font-size: var(--fs-sm); color: var(--ink-soft); }
+
+/* Classes SVG des courbes */
+.g-minor { fill: none; stroke: var(--mm); stroke-width: 1; }
+.g-major { fill: none; stroke: var(--mm-major); stroke-width: 1.1; }
+.g-frame { fill: none; stroke: var(--mm-major); stroke-width: 1.2; }
+.axis { fill: none; stroke: var(--ink); stroke-width: 1.7; }
+.axis-head { fill: var(--ink); }
+.tick { stroke: var(--ink); stroke-width: 1.5; }
+.tick-l { fill: var(--ink-soft); font-family: var(--body); font-size: 16px; }
+.ax-l { fill: var(--ink); font-family: var(--display); font-style: italic; font-size: 19px; }
+.ax-l .up { font-style: normal; }
+.c-guide { fill: none; stroke: var(--ink-soft); stroke-opacity: .4; stroke-width: 2; stroke-dasharray: 2 5; }
+.c-ink { fill: none; stroke: var(--blue); stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 0; }
+.plot-svg.drawing .c-ink { animation: pen 1.5s cubic-bezier(.55, 0, .25, 1) both; }
+.a-dash { fill: none; stroke: var(--ink-soft); stroke-width: 1.4; stroke-dasharray: 6 5; }
+.a-red { fill: none; stroke: var(--red); stroke-width: 2.1; }
+.a-dot { fill: var(--red); }
+.a-math { fill: var(--red); font-family: var(--display); font-style: italic; font-size: 20px; }
+.a-math .up { font-style: normal; }
+.a-ink { fill: var(--ink-soft); }
+.a-hand { fill: var(--red); font-family: var(--hand); font-size: 22px; }
+
+/* Trois façons */
+.paths-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1.5px solid var(--ink); }
+.path { display: grid; gap: .6rem; align-content: start; padding: 1.6rem 1.75rem 1.75rem 0; }
+.path + .path { border-left: 1px solid var(--rule); padding-left: 1.75rem; }
+.path .note { font-family: var(--hand); color: var(--red); font-size: 1.2rem; line-height: 1; transform: rotate(-2deg); transform-origin: left; justify-self: start; }
+.path h3 { font-size: var(--fs-lg); }
+.path p { color: var(--ink-soft); }
+@media (max-width: 860px) {
+  .paths-grid { grid-template-columns: minmax(0, 1fr); }
+  .path, .path + .path { padding: 1.5rem 0; border-left: 0; }
+  .path + .path { border-top: 1px solid var(--rule); }
+}
+
+/* Le professeur */
+.prof-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2.5rem, 1rem + 5vw, 5.5rem); align-items: center; }
+@media (max-width: 920px) { .prof-grid { grid-template-columns: minmax(0, 1fr); } }
+.prof-copy { display: grid; gap: 1.1rem; max-width: 35rem; }
+.prof-copy p { color: var(--ink-soft); }
+.prof-copy p strong { color: var(--ink); }
+.ticks { list-style: none; padding: 0; display: grid; gap: .55rem; margin-top: .25rem; }
+.ticks li { position: relative; padding-left: 1.6rem; }
+.ticks li::before { content: ""; position: absolute; left: .15rem; top: .42em; width: .55rem; height: .32rem; border-left: 2px solid var(--red); border-bottom: 2px solid var(--red); transform: rotate(-45deg); }
+.signature { font-family: var(--hand); font-weight: 700; color: var(--blue); font-size: 2.1rem; line-height: 1; transform: rotate(-4deg); transform-origin: left; justify-self: start; margin-top: .25rem; }
+
+/* Page de livre (exemple) */
+.stack { position: relative; padding: .5rem 1.25rem 1.75rem .5rem; min-width: 0; }
+.stack::before { content: ""; position: absolute; inset: 1.4rem .4rem .5rem 1.6rem; background: var(--page-bg); border: 1px solid var(--rule); box-shadow: var(--shadow); transform: rotate(2.6deg); }
+.bpage { position: relative; background: var(--page-bg); color: var(--page-ink); font-family: var(--page-font); font-size: .875rem; line-height: 1.5; padding: 1.15rem 1.35rem 1.5rem; border: 1px solid rgba(0, 0, 0, .08); box-shadow: var(--shadow); transform: rotate(-1deg); }
+.bpage i { font-family: var(--display); font-size: 1.06em; }
+.bp-head { display: flex; justify-content: space-between; gap: 1rem; font-size: .72rem; font-style: italic; border-bottom: 1px solid currentColor; padding-bottom: .3rem; margin-bottom: .9rem; }
+.bp-ex { display: flex; border: 3px double var(--page-ink); margin-bottom: .7rem; }
+.bp-num { background: var(--page-pink); padding: .22rem .6rem; font-weight: 700; border-right: 1px solid var(--page-ink); white-space: nowrap; }
+.bp-src { padding: .22rem .6rem; font-weight: 700; }
+.bpage p { margin: 0 0 .45rem; }
+.bp-q { padding-left: 1.3rem; margin: .2rem 0 .3rem; }
+.bp-q li { margin-bottom: .2rem; }
+.bp-corr-title { text-align: center; font-weight: 700; letter-spacing: .1em; border-top: 1.5px solid; border-bottom: 1.5px solid; padding: .18rem; margin: .9rem 0 .7rem; }
+.bp-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.bp-cols > div { padding: 0 .85rem; }
+.bp-cols > div:first-child { padding-left: 0; }
+.bp-cols > div + div { border-left: 1px solid var(--page-ink); padding-right: 0; }
+.bp-cols u { text-underline-offset: .15em; }
+.bp-box { display: inline-block; border: 1.2px solid var(--page-ink); padding: .08rem .4rem; margin: .3rem 0 .45rem; white-space: nowrap; }
+.bp-note { position: absolute; right: 1rem; bottom: .35rem; font-family: var(--hand); color: var(--page-red); font-size: 1.1rem; transform: rotate(-3deg); }
+.bpage.compact .bp-corr { display: none; }
+.bpage.compact { padding-bottom: 2.2rem; }
+@media (max-width: 520px) {
+  .bp-cols { grid-template-columns: minmax(0, 1fr); }
+  .bp-cols > div, .bp-cols > div:first-child { padding: 0; }
+  .bp-cols > div + div { border-left: 0; border-top: 1px solid var(--page-ink); padding-top: .55rem; margin-top: .4rem; }
+}
+
+/* Programme */
+.ptable { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 3fr); gap: clamp(1rem, .5rem + 2vw, 2rem); }
+@media (max-width: 920px) { .ptable { grid-template-columns: minmax(0, 1fr); } }
+.pblock-h { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: .6rem; font-size: var(--fs-xs); font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--ink-soft); }
+.tiles { display: grid; gap: .5rem; }
+.tiles.phys { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.tiles.chim { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 640px) { .tiles.phys { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.tile-btn {
+  appearance: none; -webkit-appearance: none; font: inherit; color: var(--ink); text-align: left; cursor: pointer;
+  display: grid; grid-template-rows: auto 1fr auto; gap: .15rem; min-height: 6.6rem; min-width: 0;
+  padding: .45rem .55rem .5rem; background: var(--sheet); border: 1.5px solid var(--rule-strong); border-radius: 3px;
+  transition: transform .15s ease, border-color .15s ease;
+}
+.tile-btn .code { font: 700 .75rem/1 var(--body); color: var(--blue); font-variant-numeric: tabular-nums; }
+.tiles.chim .tile-btn .code { color: var(--red); }
+.tile-btn .sym { font-family: var(--display); font-size: 1.6rem; line-height: 1.15; align-self: center; justify-self: center; white-space: nowrap; }
+.tile-btn .name { font-size: .72rem; line-height: 1.22; color: var(--ink-soft); overflow-wrap: anywhere; }
+.tile-btn:hover { transform: translateY(-2px); border-color: var(--ink); }
+.tile-btn[aria-pressed="true"] { border-color: var(--blue); box-shadow: inset 0 0 0 1.5px var(--blue); background: var(--tint-blue); }
+.tiles.chim .tile-btn[aria-pressed="true"] { border-color: var(--red); box-shadow: inset 0 0 0 1.5px var(--red); background: var(--tint-red); }
+.pdetail { margin-top: 1.25rem; background: var(--sheet); border: 1px solid var(--rule); box-shadow: var(--shadow); padding: clamp(.85rem, .6rem + 1vw, 1.25rem); display: grid; gap: 1rem; scroll-margin-top: 6rem; }
+.pd-body { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 1rem 2.25rem; align-items: center; }
+@media (max-width: 760px) { .pd-body { grid-template-columns: minmax(0, 1fr); } }
+.pd-formula { font-family: var(--display); font-size: clamp(1.2rem, 1rem + 1vw, 1.65rem); overflow-x: auto; padding: .6rem .1rem; line-height: 1.6; }
+.pd-formula > span { white-space: nowrap; }
+.pd-text { display: grid; gap: .7rem; }
+.pd-text p { color: var(--ink-soft); }
+.pd-book { font-size: var(--fs-sm); }
+
+/* Livres : couvertures */
+.cover-wrap { width: min(100%, 13rem); container-type: inline-size; perspective: 900px; flex: none; }
+.cover {
+  position: relative; width: 100%; aspect-ratio: 148 / 210; overflow: hidden; display: flex; flex-direction: column;
+  border-radius: 2px 5px 5px 2px; transform: rotateY(-13deg); transform-origin: left center;
+  padding: 9cqi 8cqi 7cqi 12cqi;
+  box-shadow: 10px 16px 26px -14px rgba(0, 0, 0, .55), inset 3px 0 0 rgba(255, 255, 255, .14);
+  transition: transform .35s ease;
+}
+.cover::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5.5cqi; background: linear-gradient(90deg, rgba(0, 0, 0, .3), rgba(255, 255, 255, .14) 60%, rgba(0, 0, 0, .1)); }
+.cover-wrap:hover .cover { transform: rotateY(-4deg); }
+.cover-phys { background: var(--cover-phys); color: var(--cover-ink); }
+.cover-chim { background: var(--cover-chim); color: var(--cover-ink); }
+.cv-brand { display: flex; align-items: center; gap: 3cqi; font-size: 9px; font-size: 5cqi; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .92; }
+.cv-tile { display: inline-grid; place-items: center; width: 11cqi; height: 11cqi; border: 1px solid currentColor; border-radius: 1px; font-family: var(--display); font-size: 6.5cqi; font-weight: 700; letter-spacing: 0; text-transform: none; }
+.cv-main { display: grid; gap: 1.5cqi; margin-top: 13cqi; }
+.cv-level { font-size: 10px; font-size: 5.6cqi; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; opacity: .85; }
+.cv-title { font-family: var(--display); font-weight: 700; font-size: 26px; font-size: 15.5cqi; line-height: .95; letter-spacing: -.01em; }
+.cv-sub { font-size: 11px; font-size: 6.2cqi; opacity: .9; }
+.cv-art { display: block; width: 100%; margin-top: auto; overflow: visible; }
+.cv-grid { stroke: rgba(255, 255, 255, .12); stroke-width: .6; fill: none; }
+.cv-axis { stroke: rgba(255, 255, 255, .75); stroke-width: 1.2; fill: none; }
+.cv-curve { stroke: #A9BCFF; stroke-width: 2.4; fill: none; stroke-linecap: round; }
+.cv-tan { stroke: #FF9DAB; stroke-width: 1.4; fill: none; }
+.cv-asym { stroke: rgba(255, 255, 255, .55); stroke-width: 1; stroke-dasharray: 4 3; fill: none; }
+.cv-mol { stroke: #FFD5DD; stroke-width: 2.2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.cv-atom { fill: #FFD5DD; font-family: var(--display); font-size: 17px; font-weight: 700; }
+.cv-foot { display: flex; justify-content: space-between; gap: 2cqi; margin-top: 6cqi; font-size: 9px; font-size: 5cqi; font-weight: 700; letter-spacing: .06em; opacity: .9; }
+.cover-dev {
+  color: var(--cover-dev-ink);
+  background-color: var(--cover-dev);
+  background-image:
+    linear-gradient(90deg, transparent 21cqi, var(--cover-margin) 21cqi, var(--cover-margin) calc(21cqi + 1.5px), transparent calc(21cqi + 1.5px)),
+    repeating-linear-gradient(180deg, transparent 0, transparent calc(7.2cqi - 1px), var(--cover-line) calc(7.2cqi - 1px), var(--cover-line) 7.2cqi);
+  padding-left: 25cqi;
+}
+.cv-dev-head { font-size: 9px; font-size: 5cqi; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; background: var(--cover-dev); align-self: flex-start; padding: .5cqi 1cqi; margin-left: -1cqi; }
+.cv-dev-title { font-family: var(--hand); font-weight: 700; font-size: 21px; font-size: 12cqi; line-height: 1.02; margin-top: 12cqi; color: #1F3FA3; }
+.cv-dev-sub { font-size: 10px; font-size: 5.8cqi; margin-top: 4cqi; font-weight: 700; background: var(--cover-dev); align-self: flex-start; }
+.cv-grade { position: relative; align-self: flex-end; margin-top: auto; margin-right: 4cqi; color: var(--cover-margin); font-family: var(--hand); font-weight: 700; font-size: 20px; font-size: 13cqi; line-height: 1; padding: 2cqi 4cqi; }
+.cv-grade small { font-size: .5em; }
+.cv-grade svg { position: absolute; inset: -2cqi -3cqi; width: calc(100% + 6cqi); height: calc(100% + 4cqi); overflow: visible; }
+.cv-grade path { fill: none; stroke: var(--cover-margin); stroke-width: 2; stroke-linecap: round; }
+.cover-dev .cv-foot { opacity: 1; background: var(--cover-dev); }
+
+/* Livres : aperçu accueil */
+.books-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.5rem, 1rem + 2vw, 2.75rem); }
+.book-mini { display: grid; gap: 1.1rem; align-content: start; justify-items: start; min-width: 0; }
+.book-mini .cover-wrap { width: min(100%, 12rem); }
+.book-mini h3 { font-size: var(--fs-md); }
+.book-mini p { color: var(--ink-soft); font-size: var(--fs-sm); }
+@media (max-width: 860px) {
+  .books-row { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .book-mini { grid-template-columns: 7.5rem minmax(0, 1fr); align-items: center; column-gap: 1.4rem; }
+  .book-mini .cover-wrap { grid-row: span 2; width: 7.5rem; }
+}
+.status { display: inline-flex; align-items: center; gap: .45rem; font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: .28rem .65rem; border-radius: 999px; border: 1.5px solid currentColor; line-height: 1.2; }
+.status::before { content: ""; width: .45rem; height: .45rem; border-radius: 50%; background: currentColor; }
+.status.ok { color: var(--ok); }
+.status.wip { color: var(--warn); }
+.mini-meta { display: flex; flex-wrap: wrap; gap: .5rem .75rem; align-items: center; }
+
+/* Étapes */
+.steps { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.75rem; counter-reset: step; }
+@media (max-width: 980px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .steps { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; } }
+.steps li { counter-increment: step; display: grid; gap: .45rem; align-content: start; padding-top: .9rem; border-top: 1.5px solid var(--ink); }
+.steps li::before { content: counter(step); font-family: var(--hand); font-weight: 700; color: var(--red); font-size: 2.3rem; line-height: 1; }
+.steps h3 { font-size: var(--fs-md); }
+.steps p { color: var(--ink-soft); font-size: var(--fs-sm); }
+.steps-cta { margin-top: 2.5rem; }
+
+/* Bande de contact */
+.cta-band { background: var(--sheet); border-top: 1px solid var(--rule); }
+.cta-band .wrap { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.75rem 3rem; align-items: center; padding-block: clamp(2.75rem, 2rem + 2.5vw, 4rem); }
+@media (max-width: 820px) { .cta-band .wrap { grid-template-columns: minmax(0, 1fr); } }
+.cta-band .txt { display: grid; gap: .7rem; }
+.cta-band .txt p { color: var(--ink-soft); }
+.num { font-family: var(--display); font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: .02em; white-space: nowrap; }
+.cta-num { font-size: clamp(1.7rem, 1.25rem + 1.6vw, 2.3rem); color: var(--ink); line-height: 1.1; }
+.cta-side { display: grid; gap: 1rem; justify-items: start; }
+
+/* Pages intérieures */
+.page-head { padding-block: clamp(2.5rem, 1.8rem + 3vw, 4.5rem) clamp(1.75rem, 1.3rem + 2vw, 2.75rem); border-bottom: 1px solid var(--rule); }
+.page-head .wrap { display: grid; gap: 1rem; }
+.page-head h1 { font-size: clamp(2.1rem, 1.5rem + 2.6vw, 3.3rem); line-height: 1.08; max-width: 17em; }
+
+/* Encadrement */
+.levels { display: flex; flex-wrap: wrap; gap: .55rem; }
+.level { display: inline-flex; align-items: baseline; gap: .45rem; padding: .5rem .9rem; border: 1.5px solid var(--rule-strong); border-radius: 999px; background: var(--sheet); font-weight: 700; }
+.level small { font-weight: 400; color: var(--ink-soft); font-size: var(--fs-xs); }
+.offers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+@media (max-width: 980px) { .offers { grid-template-columns: minmax(0, 1fr); max-width: 40rem; } }
+.offer { position: relative; display: flex; flex-direction: column; gap: .9rem; background: var(--sheet); border: 1px solid var(--rule-strong); border-radius: 3px; padding: 1.5rem 1.4rem 1.4rem; min-width: 0; }
+.offer .when { font-family: var(--hand); color: var(--red); font-size: 1.15rem; line-height: 1; transform: rotate(-2deg); transform-origin: left; }
+.offer h3 { font-size: var(--fs-lg); }
+.offer p { color: var(--ink-soft); }
+.offer ul { list-style: none; padding: 0; display: grid; gap: .5rem; }
+.offer li { position: relative; padding-left: 1.4rem; font-size: var(--fs-sm); }
+.offer li::before { content: ""; position: absolute; left: 0; top: .72em; width: .75rem; height: 2px; background: var(--ink); }
+.offer-foot { margin-top: auto; padding-top: 1rem; border-top: 1px dashed var(--rule-strong); display: grid; gap: .8rem; }
+.offer-foot .price { font-size: var(--fs-sm); color: var(--ink-soft); }
+.split { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(2rem, 1rem + 4vw, 4.5rem); align-items: start; }
+@media (max-width: 920px) { .split { grid-template-columns: minmax(0, 1fr); } }
+.split-copy { display: grid; gap: 1rem; max-width: 30rem; }
+.split-copy p { color: var(--ink-soft); }
+#inscription, #programme, #commander, #faq, .book-row { scroll-margin-top: 5.5rem; }
+
+/* Formulaires */
+.form { background: var(--sheet); border: 1px solid var(--rule); box-shadow: var(--shadow); padding: clamp(1.1rem, .8rem + 1.5vw, 1.75rem); display: grid; gap: 1rem; min-width: 0; }
+.field { display: grid; gap: .35rem; min-width: 0; }
+.field label { font-weight: 700; font-size: var(--fs-sm); }
+.field .opt { font-weight: 400; color: var(--ink-soft); }
+.field input, .field select, .field textarea {
+  width: 100%; min-width: 0; font: inherit; font-size: 1rem; color: var(--ink); background: var(--paper);
+  border: 1.5px solid var(--rule-strong); border-radius: 4px; padding: .7rem .8rem;
+}
+.field textarea { min-height: 6.5rem; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 3px solid var(--blue); outline-offset: 1px; border-color: var(--blue); }
+.row2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 560px) { .row2 { grid-template-columns: minmax(0, 1fr); } }
+.form-note { font-size: var(--fs-xs); color: var(--ink-soft); }
+.composed { display: grid; gap: .8rem; border: 1.5px dashed var(--ok); background: var(--tint-ok); border-radius: 4px; padding: 1rem; }
+.composed h3 { font-family: var(--body); font-size: var(--fs-base); font-weight: 700; }
+.composed p { font-size: var(--fs-sm); color: var(--ink-soft); }
+.composed textarea { width: 100%; min-height: 8.5rem; font: inherit; font-size: var(--fs-sm); color: var(--ink); background: var(--sheet); border: 1px solid var(--rule-strong); border-radius: 4px; padding: .6rem .7rem; resize: vertical; }
+
+/* Livres : page catalogue */
+.book-row { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: clamp(1.75rem, 1rem + 3vw, 4rem); padding-block: clamp(2.25rem, 1.75rem + 2vw, 3.25rem); border-bottom: 1px solid var(--rule); align-items: start; }
+.book-row:last-of-type { border-bottom: 0; }
+.book-row .cover-wrap { width: 100%; }
+@media (max-width: 760px) { .book-row { grid-template-columns: minmax(0, 1fr); } .book-row .cover-wrap { width: 11rem; } }
+.book-info { display: grid; gap: 1rem; max-width: 40rem; min-width: 0; }
+.book-info h2 { font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem); }
+.book-info .sub { font-family: var(--display); font-style: italic; font-size: var(--fs-md); color: var(--ink-soft); margin-top: -.6rem; }
+.book-info > p { color: var(--ink-soft); }
+.contents { list-style: none; padding: 0; display: grid; gap: .45rem; }
+.contents li { position: relative; padding-left: 1.4rem; }
+.contents li::before { content: ""; position: absolute; left: 0; top: .74em; width: .8rem; height: 2px; background: var(--red); }
+.buy { display: flex; flex-wrap: wrap; align-items: center; gap: .9rem 1.5rem; padding-top: .5rem; }
+.buy .price { font-family: var(--display); font-size: var(--fs-md); }
+.sample-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(2rem, 1rem + 4vw, 4.5rem); align-items: center; }
+@media (max-width: 920px) { .sample-grid { grid-template-columns: minmax(0, 1fr); } }
+.sample-cap { font-size: var(--fs-xs); color: var(--ink-soft); margin-top: .75rem; padding-left: .5rem; }
+
+/* Test de niveau */
+.quiz-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 17.5rem; gap: clamp(1.75rem, 1rem + 3vw, 3.5rem); align-items: start; }
+@media (max-width: 920px) { .quiz-wrap { grid-template-columns: minmax(0, 1fr); } }
+.quiz { background: var(--sheet); border: 1px solid var(--rule); box-shadow: var(--shadow); padding: clamp(1.1rem, .75rem + 1.6vw, 2rem); display: grid; gap: 1.15rem; min-width: 0; }
+.q-top { display: flex; justify-content: space-between; gap: .5rem 1rem; flex-wrap: wrap; font-size: var(--fs-sm); font-weight: 700; color: var(--ink-soft); }
+.q-top .q-chap { color: var(--blue); }
+.q-bar { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px; }
+.q-bar span { height: 6px; border-radius: 3px; background: var(--rule); }
+.q-bar span.cur { background: var(--blue); }
+.q-bar span.ok { background: var(--ink); }
+.q-bar span.ko { background: var(--red); }
+.q-text { font-family: var(--display); font-weight: 600; font-size: clamp(1.2rem, 1.02rem + .8vw, 1.55rem); line-height: 1.35; outline: none; }
+.q-opts { display: grid; gap: .6rem; }
+.q-opt { display: grid; grid-template-columns: 2.1rem minmax(0, 1fr) auto; align-items: center; gap: .8rem; width: 100%; text-align: left; padding: .75rem .9rem; border: 1.5px solid var(--rule-strong); border-radius: var(--radius); background: var(--paper); color: var(--ink); font: inherit; cursor: pointer; transition: border-color .15s ease, background-color .15s ease; }
+.q-opt:hover:not(:disabled) { border-color: var(--ink); }
+.q-opt .k { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: 50%; border: 1.5px solid var(--rule-strong); font-weight: 700; font-size: var(--fs-sm); }
+.q-opt .v { min-width: 0; }
+.q-opt .mk { font-family: var(--hand); font-weight: 700; font-size: 1.3rem; line-height: 1; }
+.q-opt:disabled { cursor: default; }
+.q-opt.is-right { border-color: var(--ok); background: var(--tint-ok); }
+.q-opt.is-right .k { border-color: var(--ok); color: var(--ok); }
+.q-opt.is-right .mk { color: var(--ok); }
+.q-opt.is-wrong { border-color: var(--red); background: var(--tint-red); }
+.q-opt.is-wrong .k { border-color: var(--red); color: var(--red); }
+.q-opt.is-wrong .v { text-decoration: line-through; text-decoration-color: var(--red); text-decoration-thickness: 2px; }
+.q-opt.is-wrong .mk { color: var(--red); }
+.q-fb { border-top: 1.5px dashed var(--red); padding-top: .9rem; display: grid; gap: .35rem; }
+.q-fb .lbl { font-family: var(--hand); font-weight: 700; color: var(--red); font-size: 1.35rem; line-height: 1; }
+.q-fb p { color: var(--ink); }
+.q-actions { display: flex; justify-content: flex-end; }
+.result { display: grid; gap: 1.1rem; justify-items: start; }
+.grade { position: relative; display: inline-flex; align-items: baseline; gap: .15rem; padding: .7rem 1.6rem .5rem; color: var(--red); }
+.grade .n { font-family: var(--hand); font-weight: 700; font-size: 4.4rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.grade .d { font-family: var(--hand); font-size: 1.9rem; }
+.grade svg { position: absolute; inset: -4px -6px; width: calc(100% + 12px); height: calc(100% + 8px); overflow: visible; }
+.grade path { fill: none; stroke: var(--red); stroke-width: 2.6; stroke-linecap: round; stroke-dasharray: 1; animation: pen 1s .1s ease both; }
+.mention { font-family: var(--display); font-size: var(--fs-lg); font-weight: 600; }
+.r-list { list-style: none; padding: 0; display: grid; gap: .4rem; }
+.r-list li { display: flex; gap: .6rem; align-items: baseline; }
+.r-list .code { font-weight: 700; color: var(--red); min-width: 2.4rem; font-variant-numeric: tabular-nums; }
+.quiz-aside { display: grid; gap: .9rem; font-size: var(--fs-sm); }
+.quiz-aside h2 { font-size: var(--fs-md); }
+.quiz-aside ul { list-style: none; padding: 0; display: grid; gap: .35rem; }
+.quiz-aside li { display: flex; gap: .6rem; }
+.quiz-aside .code { font-weight: 700; color: var(--blue); min-width: 2.3rem; }
+.quiz-aside .code.c { color: var(--red); }
+.quiz-aside p { color: var(--ink-soft); }
+
+/* Contact */
+.contact-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 1rem + 4vw, 4.5rem); align-items: start; }
+@media (max-width: 920px) { .contact-grid { grid-template-columns: minmax(0, 1fr); } }
+.contact-card { display: grid; gap: 1.1rem; }
+.contact-card .lbl { font-size: var(--fs-xs); font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--ink-soft); }
+.num-big { font-size: clamp(2.2rem, 1.6rem + 2.4vw, 3.2rem); line-height: 1; user-select: all; -webkit-user-select: all; color: var(--ink); }
+.contact-lines { display: grid; gap: .5rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+.contact-lines p { color: var(--ink-soft); }
+.faq { max-width: 50rem; }
+.faq details { border-bottom: 1px solid var(--rule); }
+.faq details:first-of-type { border-top: 1.5px solid var(--ink); }
+.faq summary { position: relative; cursor: pointer; list-style: none; padding: 1.1rem 2.5rem 1.1rem 0; font-weight: 700; font-size: 1.0625rem; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: .3rem; top: .7rem; font-family: var(--display); font-size: 1.6rem; line-height: 1; color: var(--red); transition: transform .2s ease; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { padding: 0 0 1.25rem; color: var(--ink-soft); max-width: 44rem; }
+
+/* Pied de page */
+.site-footer { background: var(--foot-bg); color: var(--foot-ink); }
+.site-footer .wrap { padding-block: clamp(2.75rem, 2rem + 2.5vw, 4rem) calc(5.5rem + env(safe-area-inset-bottom, 0px)); display: grid; gap: 2.5rem; }
+.foot-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(0, 1fr)); gap: 2rem; }
+@media (max-width: 900px) { .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .foot-brand { grid-column: 1 / -1; } }
+@media (max-width: 480px) { .foot-grid { grid-template-columns: minmax(0, 1fr); } }
+.foot-brand { display: grid; gap: 1rem; align-content: start; }
+.foot-brand p { color: var(--foot-soft); max-width: 24rem; font-size: var(--fs-sm); }
+.site-footer .logo { color: var(--foot-ink); }
+.site-footer .tile-logo { background: transparent; border-color: var(--foot-ink); }
+.site-footer h2 { font-family: var(--body); font-size: var(--fs-xs); font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--foot-soft); margin-bottom: .8rem; }
+.site-footer ul { list-style: none; padding: 0; display: grid; gap: .45rem; }
+.site-footer a { color: var(--foot-ink); text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+.foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, .14); font-size: var(--fs-xs); color: var(--foot-soft); }
+
+/* Bouton WhatsApp flottant */
+.wa-float {
+  position: fixed; z-index: 40;
+  right: calc(16px + env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  display: inline-flex; align-items: center; gap: .5rem; padding: .8rem 1.1rem; border-radius: 999px;
+  background: var(--wa); color: var(--wa-ink); font-weight: 700; font-size: var(--fs-sm); text-decoration: none;
+  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, .45);
+}
+.wa-float svg { width: 1.25rem; height: 1.25rem; }
+.wa-float:hover { text-decoration: none; transform: translateY(-1px); }
+@media (max-width: 560px) {
+  .wa-float { width: 3.25rem; height: 3.25rem; padding: 0; justify-content: center; font-size: 0; gap: 0; }
+  .wa-float svg { width: 1.45rem; height: 1.45rem; }
+}
+
+.copied { font-size: var(--fs-xs); font-weight: 700; color: var(--ok); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .cover { transform: rotateY(-8deg); }
+}
+</style>
+</head>
+<body>
+<noscript><style>.view[hidden] { display: block !important; }</style><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Kalam:wght@400;700&family=STIX+Two+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"></noscript>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="topbar-left">Encadrement en ligne en Sciences Physiques, de la 3ème à la Terminale S</span>
+    <span>WhatsApp&nbsp;: <a href="#" data-wa="info" data-tel-text>77 273 34 35</a></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="logo" href="#accueil" aria-label="Académie Al Hassane, accueil">
+      <span class="logo-acad" aria-hidden="true">Académie</span>
+      <span class="tile-logo" aria-hidden="true"><span class="z">13</span><span class="sym">Al</span></span>
+      <span class="logo-name" aria-hidden="true">Hassane</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#accueil" data-nav="accueil">Accueil</a></li>
+        <li><a href="#encadrement" data-nav="encadrement">Encadrement</a></li>
+        <li><a href="#livres" data-nav="livres">Livres et annales</a></li>
+        <li><a href="#teste-ton-niveau" data-nav="teste-ton-niveau">Teste ton niveau</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn mode-btn" id="mode-btn" type="button" aria-label="Passer en mode tableau (sombre)" title="Cahier ou tableau">
+        <svg class="i-board" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M7.5 20.5l2-4.5M16.5 20.5l-2-4.5M7 10.5c1.4-1.6 2.8 1.6 4.2 0s2.8 1.6 4.2 0"/></svg>
+        <svg class="i-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 3v18M12 8h4M12 12h4M12 16h2.5"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm hdr-cta" href="#inscription">S'inscrire</a>
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        Menu
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu" tabindex="-1">
+
+<!-- ============ ACCUEIL ============ -->
+<section class="view" data-view="accueil" aria-labelledby="h-accueil">
+
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Sciences Physiques · de la 3ème à la Terminale S</p>
+        <h1 id="h-accueil">En physique-chimie, chaque exercice a <span class="mark">sa méthode<svg class="squiggle" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 9.5C30 4 55 12 85 8S140 3.5 168 7.5 192 9 197 6"/></svg></span>.</h1>
+        <p class="lead">M. Ba accompagne les élèves du collège et du lycée en physique et en chimie&nbsp;: cours en ligne en direct, suivi sur WhatsApp et livres d'exercices corrigés conformes au programme sénégalais.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#" data-wa="info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4h0A2.5 2.5 0 0 1 4 13.5v-8A2.5 2.5 0 0 1 6.5 3z"/></svg>
+            S'inscrire sur WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#livres">Voir les livres</a>
+        </div>
+        <p class="hero-note">Pas encore décidé&#8239;? <a href="#teste-ton-niveau">Teste ton niveau en dix questions</a>, ta note sur 20 s'affiche à la fin.</p>
+      </div>
+
+      <figure class="plot-card" aria-labelledby="plot-cap">
+        <div class="banner"><span class="code" id="plot-code">P9</span><span class="title" id="plot-title">Charge d'un condensateur</span></div>
+        <div class="plot-svg" id="plot"></div>
+        <div class="plot-tabs" role="tablist" aria-label="Choisir une courbe">
+          <button type="button" role="tab" id="tab-rc" aria-selected="true" aria-controls="plot" data-plot="rc">Dipôle RC</button>
+          <button type="button" role="tab" id="tab-ph" aria-selected="false" aria-controls="plot" data-plot="ph" tabindex="-1">Dosage pH-métrique</button>
+          <button type="button" role="tab" id="tab-osc" aria-selected="false" aria-controls="plot" data-plot="osc" tabindex="-1">Pendule élastique</button>
+        </div>
+        <figcaption id="plot-cap">Charge d'un condensateur à travers un résistor. La tangente à l'origine coupe l'asymptote <i>u</i> = <i>E</i> à la date <i>t</i> = <i>τ</i>&nbsp;: c'est la méthode de la tangente.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section class="sec" aria-labelledby="h-paths">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-paths">Trois façons de travailler avec M. Ba</h2>
+      </div>
+      <div class="paths-grid">
+        <div class="path">
+          <span class="note">en direct</span>
+          <h3>Les cours en ligne</h3>
+          <p>Des séances en direct, une série d'exercices à chaque chapitre et un suivi régulier jusqu'à l'examen.</p>
+          <a class="link-more" href="#encadrement">Voir l'encadrement</a>
+        </div>
+        <div class="path">
+          <span class="note">P1 à P15, C1 à C9</span>
+          <h3>Les livres</h3>
+          <p>Les exercices de M. Ba et leurs corrigés détaillés, classés dans l'ordre du programme de Terminale S.</p>
+          <a class="link-more" href="#livres">Voir les livres</a>
+        </div>
+        <div class="path">
+          <span class="note">note sur 20</span>
+          <h3>Le test de niveau</h3>
+          <p>Dix questions sur le programme de Terminale S. Tu obtiens ta note et la liste des chapitres à revoir.</p>
+          <a class="link-more" href="#teste-ton-niveau">Faire le test</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-prof">
+    <div class="wrap prof-grid">
+      <div class="prof-copy">
+        <p class="eyebrow">Le professeur</p>
+        <h2 id="h-prof">M. Ba, professeur de Sciences Physiques</h2>
+        <p>M. Ba enseigne la physique et la chimie. Il a réuni dans des livres les exercices qu'il fait travailler à ses élèves&nbsp;: des énoncés classés selon le programme, des devoirs et des compositions donnés dans plusieurs académies du pays, et des corrigés rédigés étape par étape.</p>
+        <p>Dans ses livres, <strong>les corrigés commencent toujours sur une nouvelle page</strong>. L'élève cherche d'abord, il vérifie ensuite.</p>
+        <ul class="ticks">
+          <li>Le programme officiel de Terminale S, chapitre par chapitre</li>
+          <li>Des corrigés complets&nbsp;: formule, application numérique, résultat encadré avec son unité</li>
+          <li>Des figures et des courbes redessinées avec soin</li>
+        </ul>
+        <span class="signature" aria-hidden="true">Mr BA</span>
+      </div>
+      <div class="stack" data-page="compact"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="programme" aria-labelledby="h-prog">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Le programme</p>
+        <h2 id="h-prog">Tout le programme de Terminale S</h2>
+        <p>Quinze chapitres de physique et neuf de chimie, dans l'ordre du programme officiel. Choisis un chapitre pour voir sa notion clé.</p>
+      </div>
+      <div class="ptable">
+        <div>
+          <div class="pblock-h"><span>Physique</span><span>P1 à P15</span></div>
+          <div class="tiles phys" id="tiles-phys"></div>
+        </div>
+        <div>
+          <div class="pblock-h"><span>Chimie</span><span>C1 à C9</span></div>
+          <div class="tiles chim" id="tiles-chim"></div>
+        </div>
+      </div>
+      <div class="pdetail" id="pdetail" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-books">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Livres et annales</p>
+        <h2 id="h-books">Les livres de M. Ba</h2>
+        <p>Des exercices corrigés pour travailler seul, à la maison, entre deux cours.</p>
+      </div>
+      <div class="books-row">
+        <article class="book-mini">
+          <div class="cover-wrap" data-cover="phys"></div>
+          <div style="display:grid;gap:.6rem;min-width:0">
+            <h3>Physique Terminale S</h3>
+            <p>Exercices et corrigés, de P1 à P15.</p>
+            <div class="mini-meta"><span class="status ok">Disponible</span><a class="link-more" href="#livre-physique">Voir le livre</a></div>
+          </div>
+        </article>
+        <article class="book-mini">
+          <div class="cover-wrap" data-cover="chim"></div>
+          <div style="display:grid;gap:.6rem;min-width:0">
+            <h3>Chimie Terminale S2</h3>
+            <p>Exercices et corrigés, de C1 à C9.</p>
+            <div class="mini-meta"><span class="status wip">En préparation</span><a class="link-more" href="#livre-chimie">Voir le livre</a></div>
+          </div>
+        </article>
+        <article class="book-mini">
+          <div class="cover-wrap" data-cover="dev"></div>
+          <div style="display:grid;gap:.6rem;min-width:0">
+            <h3>Devoirs et compositions TS2</h3>
+            <p>Sujets d'évaluation et leurs corrigés.</p>
+            <div class="mini-meta"><span class="status ok">Disponible</span><a class="link-more" href="#livre-devoirs">Voir le livre</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-steps">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">L'encadrement</p>
+        <h2 id="h-steps">Comment ça se passe</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Fais le test de niveau</h3><p>Dix questions, une dizaine de minutes. Le résultat montre les chapitres à reprendre en priorité.</p></li>
+        <li><h3>Écris à M. Ba</h3><p>Sur WhatsApp, indique la classe de l'élève et la formule qui t'intéresse. Tu reçois le tarif et les horaires.</p></li>
+        <li><h3>Rejoins ta classe en ligne</h3><p>Les séances ont lieu en direct. Les séries d'exercices et les corrections sont partagées avec la classe.</p></li>
+        <li><h3>Progresse jusqu'à l'examen</h3><p>Devoirs corrigés, reprise des points faibles et révisions avant les compositions, le BFEM et le BAC.</p></li>
+      </ol>
+      <div class="btn-row steps-cta">
+        <a class="btn btn-primary" href="#inscription">S'inscrire</a>
+        <a class="link-more" href="#encadrement">Voir les formules</a>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ ENCADREMENT ============ -->
+<section class="view" data-view="encadrement" aria-labelledby="h-enc" hidden>
+  <div class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Encadrement</p>
+      <h1 id="h-enc">Cours en ligne avec M. Ba</h1>
+      <p class="lead">Des séances en direct, un suivi entre les cours et des exercices corrigés à chaque chapitre, pour les élèves de 3ème, de Seconde, de Première et de Terminale S.</p>
+      <div class="levels" aria-label="Niveaux">
+        <span class="level">3ème <small>BFEM</small></span>
+        <span class="level">Seconde S</span>
+        <span class="level">Première S</span>
+        <span class="level">Terminale S1 et S2 <small>BAC</small></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="sec" aria-labelledby="h-offers">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-offers">Les formules</h2>
+        <p>Le tarif dépend de la formule et du niveau. M. Ba te le communique sur WhatsApp.</p>
+      </div>
+      <div class="offers">
+        <article class="offer">
+          <span class="when">toute l'année</span>
+          <h3>Suivi annuel</h3>
+          <p>Pour avancer au rythme du programme et ne pas accumuler de retard.</p>
+          <ul>
+            <li>Cours en direct sur chaque chapitre</li>
+            <li>Une série d'exercices corrigée par chapitre</li>
+            <li>Préparation des devoirs et des compositions</li>
+            <li>Point régulier avec les parents</li>
+          </ul>
+          <div class="offer-foot">
+            <span class="price">Tarif communiqué sur WhatsApp</span>
+            <a class="btn btn-ghost" href="#inscription" data-formule="Suivi annuel">Choisir cette formule</a>
+          </div>
+        </article>
+        <article class="offer">
+          <span class="when">avant le BFEM et le BAC</span>
+          <h3>Objectif examen</h3>
+          <p>Pour réviser tout le programme et s'entraîner dans les conditions de l'examen.</p>
+          <ul>
+            <li>Révision de tous les chapitres</li>
+            <li>Sujets des années précédentes traités en classe</li>
+            <li>Méthodes de rédaction et gestion du temps</li>
+            <li>Épreuves blanches corrigées</li>
+          </ul>
+          <div class="offer-foot">
+            <span class="price">Tarif communiqué sur WhatsApp</span>
+            <a class="btn btn-ghost" href="#inscription" data-formule="Objectif examen">Choisir cette formule</a>
+          </div>
+        </article>
+        <article class="offer">
+          <span class="when">pendant les congés</span>
+          <h3>Vacances et remise à niveau</h3>
+          <p>Pour reprendre les chapitres mal compris ou prendre de l'avance sur l'année suivante.</p>
+          <ul>
+            <li>Reprise des bases du niveau précédent</li>
+            <li>Séances courtes et régulières</li>
+            <li>Exercices ciblés sur les points faibles</li>
+          </ul>
+          <div class="offer-foot">
+            <span class="price">Tarif communiqué sur WhatsApp</span>
+            <a class="btn btn-ghost" href="#inscription" data-formule="Vacances et remise à niveau">Choisir cette formule</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="inscription" aria-labelledby="h-insc">
+    <div class="wrap split">
+      <div class="split-copy">
+        <p class="eyebrow">Inscription</p>
+        <h2 id="h-insc">Inscrire un élève</h2>
+        <p>Remplis le formulaire. Ton message WhatsApp est préparé automatiquement, il ne te reste qu'à l'envoyer à M. Ba.</p>
+        <p>Tu préfères appeler&#8239;? <a class="num" href="#" data-tel-link data-tel-text>77 273 34 35</a></p>
+      </div>
+      <form class="form" id="form-insc" novalidate>
+        <div class="field">
+          <label for="i-nom">Prénom et nom de l'élève</label>
+          <input id="i-nom" name="nom" autocomplete="name" required>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="i-classe">Classe</label>
+            <select id="i-classe" name="classe" required>
+              <option value="">Choisir</option>
+              <option>3ème</option>
+              <option>Seconde S</option>
+              <option>Première S</option>
+              <option>Terminale S1</option>
+              <option>Terminale S2</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="i-formule">Formule</label>
+            <select id="i-formule" name="formule">
+              <option>Je ne sais pas encore</option>
+              <option>Suivi annuel</option>
+              <option>Objectif examen</option>
+              <option>Vacances et remise à niveau</option>
+            </select>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="i-etab">Établissement <span class="opt">(facultatif)</span></label>
+            <input id="i-etab" name="etab" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="i-tel">Numéro WhatsApp <span class="opt">(élève ou parent)</span></label>
+            <input id="i-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="77 000 00 00" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="i-msg">Message <span class="opt">(facultatif)</span></label>
+          <textarea id="i-msg" name="msg" placeholder="Chapitres difficiles, disponibilités, questions..."></textarea>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary" type="submit">Préparer mon message WhatsApp</button>
+        </div>
+        <p class="form-note">Rien n'est envoyé depuis ce site&nbsp;: le message s'ouvre dans WhatsApp, et c'est toi qui l'envoies.</p>
+        <div class="composed" id="out-insc" hidden></div>
+      </form>
+    </div>
+  </section>
+</section>
+
+<!-- ============ LIVRES ============ -->
+<section class="view" data-view="livres" aria-labelledby="h-livres" hidden>
+  <div class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Livres et annales</p>
+      <h1 id="h-livres">Les livres de M. Ba</h1>
+      <p class="lead">Des exercices classés par chapitre, puis leurs corrigés détaillés. Les livres suivent le programme officiel de Terminale S en vigueur au Sénégal.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <article class="book-row" id="livre-physique" aria-labelledby="h-b1">
+      <div class="cover-wrap" data-cover="phys"></div>
+      <div class="book-info">
+        <div class="mini-meta"><span class="status ok">Disponible</span><span class="form-note">Terminale S1 et S2</span></div>
+        <h2 id="h-b1">Physique Terminale S</h2>
+        <p class="sub">Exercices et corrigés</p>
+        <p>Les quinze chapitres de physique de Terminale S, de la cinématique du point aux réactions nucléaires. Pour chaque chapitre, les énoncés d'abord, puis les corrigés sur des pages à part.</p>
+        <ul class="contents">
+          <li>Chapitres P1 à P15, dans l'ordre du programme</li>
+          <li>Les séries d'exercices de chaque chapitre</li>
+          <li>Des corrigés rédigés étape par étape, résultats encadrés</li>
+          <li>Figures, schémas et courbes redessinés</li>
+          <li>Le programme de Terminale S en début d'ouvrage</li>
+        </ul>
+        <div class="buy">
+          <span class="price" data-price="phys">Prix sur WhatsApp</span>
+          <a class="btn btn-primary" href="#" data-wa-book="phys">Commander sur WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="book-row" id="livre-chimie" aria-labelledby="h-b2">
+      <div class="cover-wrap" data-cover="chim"></div>
+      <div class="book-info">
+        <div class="mini-meta"><span class="status wip">En préparation</span><span class="form-note">Terminale S2</span></div>
+        <h2 id="h-b2">Chimie Terminale S2</h2>
+        <p class="sub">Exercices et corrigés</p>
+        <p>Les neuf chapitres de chimie de Terminale S2, des alcools aux acides α-aminés, avec la même organisation que le livre de physique.</p>
+        <ul class="contents">
+          <li>Chapitres C1 à C9, dans l'ordre du programme</li>
+          <li>Formules semi-développées et équations de réaction écrites en entier</li>
+          <li>Corrigés&nbsp;: formule littérale, application numérique, résultat avec son unité</li>
+        </ul>
+        <div class="buy">
+          <span class="price">Sortie annoncée sur WhatsApp</span>
+          <a class="btn btn-ghost" href="#" data-wa-book="chim">Être prévenu de la sortie</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="book-row" id="livre-devoirs" aria-labelledby="h-b3">
+      <div class="cover-wrap" data-cover="dev"></div>
+      <div class="book-info">
+        <div class="mini-meta"><span class="status ok">Disponible</span><span class="form-note">Terminale S2</span></div>
+        <h2 id="h-b3">Devoirs et compositions TS2</h2>
+        <p class="sub">Sujets corrigés</p>
+        <p>Des devoirs et des compositions de Terminale S, rangés par semestre, chacun suivi de sa correction complète. Une bonne façon de s'entraîner dans les conditions d'une vraie évaluation.</p>
+        <ul class="contents">
+          <li>Des sujets donnés au premier et au second semestre</li>
+          <li>Des épreuves de plusieurs inspections d'académie&nbsp;: Thiès, Saint-Louis, Pikine-Guédiawaye, Rufisque…</li>
+          <li>Le corrigé commence toujours sur une nouvelle page</li>
+        </ul>
+        <div class="buy">
+          <span class="price" data-price="dev">Prix sur WhatsApp</span>
+          <a class="btn btn-primary" href="#" data-wa-book="dev">Commander sur WhatsApp</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <section class="sec" aria-labelledby="h-sample">
+    <div class="wrap sample-grid">
+      <div class="split-copy">
+        <p class="eyebrow">Mise en page</p>
+        <h2 id="h-sample">À quoi ressemble une page</h2>
+        <p>L'énoncé tient sur une colonne. Le corrigé est rédigé sur deux colonnes séparées par un trait, avec les résultats encadrés. D'un chapitre à l'autre, l'élève retrouve toujours la même organisation.</p>
+      </div>
+      <div>
+        <div class="stack" data-page="full"></div>
+        <p class="sample-cap">Page d'exemple reprenant la mise en page des livres.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="commander" aria-labelledby="h-cmd">
+    <div class="wrap split">
+      <div class="split-copy">
+        <h2 id="h-cmd">Commander un livre</h2>
+        <p>La commande se fait sur WhatsApp. Indique le titre, ta classe et ta ville&nbsp;: M. Ba te répond avec le prix et la façon de récupérer le livre.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#" data-wa="livre">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4h0A2.5 2.5 0 0 1 4 13.5v-8A2.5 2.5 0 0 1 6.5 3z"/></svg>
+          Écrire à M. Ba
+        </a>
+        <span class="num cta-num" data-tel-text>77 273 34 35</span>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ TEST DE NIVEAU ============ -->
+<section class="view" data-view="teste-ton-niveau" aria-labelledby="h-test" hidden>
+  <div class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Test de niveau</p>
+      <h1 id="h-test">Teste ton niveau en Terminale S</h1>
+      <p class="lead">Dix questions de physique et de chimie, tirées du programme. Prends une feuille de brouillon. À la fin, tu obtiens ta note sur 20 et les chapitres à revoir.</p>
+    </div>
+  </div>
+  <section class="sec">
+    <div class="wrap quiz-wrap">
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+      <aside class="quiz-aside" aria-labelledby="h-cover">
+        <h2 id="h-cover">Ce que couvre le test</h2>
+        <ul id="quiz-chapters"></ul>
+        <p>Le test donne une première idée de ton niveau. Il ne remplace pas une vraie évaluation&nbsp;: c'est un point de départ pour savoir quoi travailler.</p>
+      </aside>
+    </div>
+  </section>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="view" data-view="contact" aria-labelledby="h-contact" hidden>
+  <div class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1 id="h-contact">Écrire à M. Ba</h1>
+      <p class="lead">Pour une inscription, une commande de livre ou une question sur un chapitre, le plus simple est WhatsApp.</p>
+    </div>
+  </div>
+  <section class="sec">
+    <div class="wrap contact-grid">
+      <div class="contact-card">
+        <span class="lbl">WhatsApp et téléphone</span>
+        <span class="num num-big" data-tel-text>77 273 34 35</span>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#" data-wa="question">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4h0A2.5 2.5 0 0 1 4 13.5v-8A2.5 2.5 0 0 1 6.5 3z"/></svg>
+            Écrire sur WhatsApp
+          </a>
+          <button class="btn btn-ghost" type="button" data-copy-tel>Copier le numéro</button>
+          <a class="btn btn-ghost" href="#" data-tel-link>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.2 3.5h3.2l1.7 4.4-2.1 1.4a11.5 11.5 0 0 0 6.7 6.7l1.4-2.1 4.4 1.7v3.2a2 2 0 0 1-2.1 2A16.6 16.6 0 0 1 3.2 5.6a2 2 0 0 1 2-2.1z"/></svg>
+            Appeler
+          </a>
+        </div>
+        <span class="copied" id="copied-tel" aria-live="polite"></span>
+        <div class="contact-lines">
+          <p id="contact-email-line" hidden>E-mail&nbsp;: <a id="contact-email" href="#"></a></p>
+          <p>Site&nbsp;: <span class="nb">academie-al-hassane.com</span></p>
+          <p>Cours en ligne&nbsp;: les élèves suivent depuis chez eux, où qu'ils soient.</p>
+        </div>
+      </div>
+
+      <form class="form" id="form-contact" novalidate>
+        <div class="row2">
+          <div class="field">
+            <label for="c-objet">Objet</label>
+            <select id="c-objet" name="objet">
+              <option>Inscription</option>
+              <option>Commande de livre</option>
+              <option>Question sur un chapitre</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="c-classe">Classe <span class="opt">(facultatif)</span></label>
+            <select id="c-classe" name="classe">
+              <option value="">Non précisée</option>
+              <option>3ème</option>
+              <option>Seconde S</option>
+              <option>Première S</option>
+              <option>Terminale S1</option>
+              <option>Terminale S2</option>
+              <option>Parent d'élève</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="c-nom">Ton nom</label>
+          <input id="c-nom" name="nom" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="c-msg">Message</label>
+          <textarea id="c-msg" name="msg" required></textarea>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary" type="submit">Préparer mon message</button>
+        </div>
+        <p class="form-note">Le message s'ouvre dans WhatsApp, prêt à être envoyé à M. Ba.</p>
+        <div class="composed" id="out-contact" hidden></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="h-faq">
+    <div class="wrap faq">
+      <div class="sec-head"><h2 id="h-faq">Questions fréquentes</h2></div>
+      <details>
+        <summary>Comment se passent les cours en ligne&#8239;?</summary>
+        <p>Les séances ont lieu en direct, en visioconférence. Entre deux séances, les séries d'exercices, les corrections et les annonces passent par le groupe WhatsApp de la classe.</p>
+      </details>
+      <details>
+        <summary>De quoi l'élève a-t-il besoin&#8239;?</summary>
+        <p>D'un téléphone ou d'un ordinateur avec une connexion internet, d'un cahier, d'une calculatrice et d'un peu de régularité.</p>
+      </details>
+      <details>
+        <summary>Peut-on s'inscrire en cours d'année&#8239;?</summary>
+        <p>Oui. Le test de niveau aide à repérer les chapitres à reprendre en priorité, pour rattraper le programme sans perdre de temps.</p>
+      </details>
+      <details>
+        <summary>Comment commander un livre&#8239;?</summary>
+        <p>Envoie sur WhatsApp le titre du livre, ta classe et ta ville. M. Ba te répond avec le prix et la façon de récupérer le livre.</p>
+      </details>
+      <details>
+        <summary>Les livres suivent-ils le programme&#8239;?</summary>
+        <p>Oui. Ils suivent le programme officiel de Terminale S en vigueur au Sénégal, chapitre par chapitre&nbsp;: de P1 à P15 en physique et de C1 à C9 en chimie.</p>
+      </details>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<section class="cta-band" id="cta-band" aria-labelledby="h-cta">
+  <div class="wrap">
+    <div class="txt">
+      <h2 id="h-cta">Une question sur les cours ou les livres&#8239;?</h2>
+      <p>M. Ba répond sur WhatsApp. Écris-lui directement, ou appelle au&nbsp;:</p>
+      <span class="num cta-num" data-tel-text>77 273 34 35</span>
+    </div>
+    <div class="cta-side">
+      <a class="btn btn-primary" href="#" data-wa="question">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4h0A2.5 2.5 0 0 1 4 13.5v-8A2.5 2.5 0 0 1 6.5 3z"/></svg>
+        Écrire sur WhatsApp
+      </a>
+      <button class="btn btn-ghost" type="button" data-copy-tel>Copier le numéro</button>
+      <span class="copied" aria-live="polite"></span>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#accueil" aria-label="Académie Al Hassane, accueil">
+          <span class="logo-acad" aria-hidden="true">Académie</span>
+          <span class="tile-logo" aria-hidden="true"><span class="z">13</span><span class="sym">Al</span></span>
+          <span class="logo-name" aria-hidden="true">Hassane</span>
+        </a>
+        <p>Encadrement en ligne et livres d'exercices corrigés en Sciences Physiques, avec M. Ba.</p>
+      </div>
+      <div>
+        <h2>L'académie</h2>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#encadrement">Encadrement</a></li>
+          <li><a href="#livres">Livres et annales</a></li>
+          <li><a href="#teste-ton-niveau">Teste ton niveau</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Le programme</h2>
+        <ul>
+          <li><a href="#programme">Physique, P1 à P15</a></li>
+          <li><a href="#programme">Chimie, C1 à C9</a></li>
+          <li><a href="#faq">Questions fréquentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="#" data-wa="question">WhatsApp&nbsp;: <span class="nb" data-tel-text>77 273 34 35</span></a></li>
+          <li><a href="#" data-tel-link>Appeler M. Ba</a></li>
+          <li id="foot-email" hidden><a href="#"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Académie Al Hassane</span>
+      <span>academie-al-hassane.com</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" data-wa="info" aria-label="Écrire à M. Ba sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4h0A2.5 2.5 0 0 1 4 13.5v-8A2.5 2.5 0 0 1 6.5 3z"/></svg>
+  WhatsApp
+</a>
+
+<template id="tpl-page">
+  <div class="bpage">
+    <div class="bp-head"><span>Physique Terminale S</span><span>Mr BA 77 273 34 35</span></div>
+    <div class="bp-ex"><span class="bp-num">EXERCICE n° 1</span><span class="bp-src">Dipôle RC</span></div>
+    <p>Un condensateur de capacité <i>C</i> = 2,2 µF, initialement déchargé, est chargé sous une tension constante <i>E</i> = 6,0 V à travers un résistor de résistance <i>R</i> = 4,7 kΩ.</p>
+    <ol class="bp-q">
+      <li>Établir l'équation différentielle vérifiée par la tension <i>u</i><sub>C</sub>.</li>
+      <li>Calculer la constante de temps <i>τ</i> du circuit.</li>
+      <li>Calculer <i>u</i><sub>C</sub> à la date <i>t</i> = <i>τ</i>.</li>
+    </ol>
+    <div class="bp-corr">
+      <div class="bp-corr-title">CORRIGÉ</div>
+      <div class="bp-cols">
+        <div>
+          <p><u>1) Équation différentielle</u></p>
+          <p>Loi d'additivité des tensions&nbsp;: <i>E</i> = <i>Ri</i> + <i>u</i><sub>C</sub>, avec <i>i</i> = <i>C</i><span class="frac"><span>d<i>u</i><sub>C</sub></span><span>d<i>t</i></span></span></p>
+          <span class="bp-box"><i>RC</i><span class="frac"><span>d<i>u</i><sub>C</sub></span><span>d<i>t</i></span></span> + <i>u</i><sub>C</sub> = <i>E</i></span>
+        </div>
+        <div>
+          <p><u>2) Constante de temps</u></p>
+          <p><i>τ</i> = <i>RC</i> = 4,7×10<sup>3</sup> × 2,2×10<sup>−6</sup></p>
+          <span class="bp-box"><i>τ</i> ≈ 1,0×10<sup>−2</sup> s</span>
+          <p><u>3) Tension à <i>t</i> = <i>τ</i></u></p>
+          <p><i>u</i><sub>C</sub>(<i>τ</i>) = <i>E</i>(1 − e<sup>−1</sup>) = 0,63 <i>E</i></p>
+          <span class="bp-box"><i>u</i><sub>C</sub>(<i>τ</i>) ≈ 3,8 V</span>
+        </div>
+      </div>
+    </div>
+    <span class="bp-note">corrigé à la page suivante</span>
+  </div>
+</template>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- Réglages du site : à modifier ici ---------- */
+  var SITE = {
+    whatsapp: "221772733435",      // numéro WhatsApp au format international, sans + ni espaces
+    tel: "+221772733435",          // numéro pour le bouton Appeler
+    telAffiche: "77 273 34 35",    // numéro tel qu'il s'affiche
+    email: "",                     // ex. "contact@academie-al-hassane.com" (laisser vide pour masquer)
+    prix: { phys: "", dev: "" }    // ex. "7 500 FCFA" (laisser vide : « Prix sur WhatsApp »)
+  };
+
+  /* Polices chargées sans bloquer l'affichage */
+  Array.prototype.forEach.call(document.querySelectorAll("link[data-fonts]"), function (l) { l.media = "all"; });
+
+  var NB = " ", NNB = " ";
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function $(s, r) { return (r || document).querySelector(s); }
+  function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function wa(text) { return "https://wa.me/" + SITE.whatsapp + "?text=" + encodeURIComponent(text); }
+  function setExternal(a, href) { a.href = href; a.target = "_blank"; a.rel = "noopener"; }
+
+  /* ---------- Liens WhatsApp, téléphone, e-mail ---------- */
+  var MSG = {
+    info: "Bonjour M. Ba, je voudrais des informations sur l'encadrement en ligne de l'Académie Al Hassane.",
+    question: "Bonjour M. Ba, j'ai une question.",
+    livre: "Bonjour M. Ba, je voudrais commander un livre." + "\nTitre" + NB + ": \nClasse" + NB + ": \nVille" + NB + ": "
+  };
+  var BOOKS = {
+    phys: { titre: "Physique Terminale S, exercices et corrigés", wip: false },
+    chim: { titre: "Chimie Terminale S2, exercices et corrigés", wip: true },
+    dev:  { titre: "Devoirs et compositions TS2, sujets corrigés", wip: false }
+  };
+  $$("[data-tel-text]").forEach(function (el) { el.textContent = SITE.telAffiche; });
+  $$("[data-tel-link]").forEach(function (a) { a.href = "tel:" + SITE.tel; });
+  $$("[data-wa]").forEach(function (a) { setExternal(a, wa(MSG[a.getAttribute("data-wa")] || MSG.info)); });
+  $$("[data-wa-book]").forEach(function (a) {
+    var b = BOOKS[a.getAttribute("data-wa-book")];
+    var t = b.wip
+      ? "Bonjour M. Ba, je voudrais être prévenu(e) de la sortie du livre «" + NB + b.titre + NB + "»."
+      : "Bonjour M. Ba, je souhaite commander le livre «" + NB + b.titre + NB + "».\nNom" + NB + ": \nClasse" + NB + ": \nVille" + NB + ": ";
+    setExternal(a, wa(t));
+  });
+  $$("[data-price]").forEach(function (el) { var p = SITE.prix[el.getAttribute("data-price")]; if (p) el.textContent = p; });
+  if (SITE.email) {
+    var el = $("#contact-email"); el.textContent = SITE.email; el.href = "mailto:" + SITE.email; $("#contact-email-line").hidden = false;
+    var fe = $("#foot-email a"); fe.textContent = SITE.email; fe.href = "mailto:" + SITE.email; $("#foot-email").hidden = false;
+  }
+  var yr = $("#year"); if (yr) yr.textContent = String(new Date().getFullYear());
+
+  /* ---------- Copier le numéro ---------- */
+  function copyText(text, done) {
+    function fallback() {
+      var ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly", "");
+      ta.style.position = "fixed"; ta.style.opacity = "0"; document.body.appendChild(ta); ta.select();
+      var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+      document.body.removeChild(ta); done(ok);
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      } else { fallback(); }
+    } catch (e) { fallback(); }
+  }
+  $$("[data-copy-tel]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var out = btn.parentNode.querySelector(".copied") || $("#copied-tel");
+      copyText("+221 " + SITE.telAffiche, function (ok) {
+        if (out) out.textContent = ok ? "Numéro copié." : "Sélectionne le numéro affiché pour le copier.";
+        setTimeout(function () { if (out) out.textContent = ""; }, 3000);
+      });
+    });
+  });
+
+  /* ---------- Navigation par ancre ---------- */
+  var VIEWS = ["accueil", "encadrement", "livres", "teste-ton-niveau", "contact"];
+  var TITLES = {
+    "accueil": "Académie Al Hassane",
+    "encadrement": "Encadrement · Académie Al Hassane",
+    "livres": "Livres et annales · Académie Al Hassane",
+    "teste-ton-niveau": "Teste ton niveau · Académie Al Hassane",
+    "contact": "Contact · Académie Al Hassane"
+  };
+  var current = null;
+  var nav = $("#nav"), menuBtn = $("#menu-btn");
+  function closeMenu() { nav.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }
+  menuBtn.addEventListener("click", function () {
+    var open = !nav.classList.contains("open");
+    nav.classList.toggle("open", open); menuBtn.setAttribute("aria-expanded", String(open));
+  });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeMenu(); });
+
+  function showView(view) {
+    if (view === current) return false;
+    var first = current === null;
+    $$(".view").forEach(function (v) {
+      var on = v.getAttribute("data-view") === view;
+      v.hidden = !on;
+      if (on && !first && !reduceMotion) { v.classList.remove("enter"); void v.offsetWidth; v.classList.add("enter"); }
+    });
+    $$("[data-nav]").forEach(function (a) {
+      if (a.getAttribute("data-nav") === view) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    });
+    document.body.setAttribute("data-current", view);
+    $("#cta-band").hidden = (view === "contact");
+    try { document.title = TITLES[view]; } catch (e) {}
+    current = view;
+    return !first;
+  }
+  function route(force) {
+    var h = "";
+    try { h = decodeURIComponent((location.hash || "").slice(1)); } catch (e) { h = ""; }
+    var view, target = null;
+    if (!h || h === "accueil") view = "accueil";
+    else if (VIEWS.indexOf(h) !== -1) view = h;
+    else {
+      target = document.getElementById(h);
+      var owner = target && target.closest(".view");
+      view = owner ? owner.getAttribute("data-view") : (current || "accueil");
+    }
+    var changed = showView(view);
+    closeMenu();
+    if (target) {
+      requestAnimationFrame(function () { target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" }); });
+    } else if (changed || force) {
+      window.scrollTo(0, 0);
+      if (changed) {
+        var hd = $(".view[data-view='" + view + "'] h1");
+        if (hd) { hd.setAttribute("tabindex", "-1"); try { hd.focus({ preventScroll: true }); } catch (e) {} }
+      }
+    }
+  }
+  window.addEventListener("hashchange", function () { route(false); });
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var f = a.getAttribute("data-formule");
+    if (f) { var sel = $("#i-formule"); if (sel) sel.value = f; }
+    var href = a.getAttribute("href");
+    if (href === "#") return;
+    var same = href === location.hash || (href === "#accueil" && !location.hash);
+    if (same) { e.preventDefault(); route(true); }
+  });
+
+  /* ---------- Mode cahier / tableau ---------- */
+  var modeBtn = $("#mode-btn");
+  try { var saved = localStorage.getItem("aah-mode"); if (saved === "cahier" || saved === "tableau") document.body.setAttribute("data-mode", saved); } catch (e) {}
+  function effMode() { return (getComputedStyle(document.body).getPropertyValue("--mode-name") || "").trim() || "cahier"; }
+  function syncMode() {
+    var m = effMode();
+    modeBtn.setAttribute("aria-label", m === "tableau" ? "Passer en mode cahier (clair)" : "Passer en mode tableau (sombre)");
+    modeBtn.title = m === "tableau" ? "Mode cahier" : "Mode tableau";
+  }
+  modeBtn.addEventListener("click", function () {
+    var next = effMode() === "tableau" ? "cahier" : "tableau";
+    document.body.setAttribute("data-mode", next);
+    try { localStorage.setItem("aah-mode", next); } catch (e) {}
+    syncMode();
+  });
+  syncMode();
+  if (window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    if (mq.addEventListener) mq.addEventListener("change", syncMode);
+  }
+
+  /* ---------- Courbes du hero ---------- */
+  var KA = Math.pow(10, -4.8);
+  function pHAt(vb) {
+    var ca = 0.10, va = 20, cb = 0.10, kw = 1e-14, v = va + vb;
+    var c = ca * va / v, na = cb * vb / v, lo = 0, hi = 14;
+    for (var i = 0; i < 60; i++) {
+      var mid = (lo + hi) / 2, h = Math.pow(10, -mid);
+      var f = h + na - kw / h - c * KA / (KA + h);
+      if (f > 0) lo = mid; else hi = mid;
+    }
+    return (lo + hi) / 2;
+  }
+  var PHE = pHAt(20);
+  function fmt(x, d) { return x.toFixed(d).replace(".", ","); }
+
+  var X0 = 70, X1 = 570, YB = 370, YT = 20;
+  var PLOTS = {
+    rc: {
+      code: "P9", title: "Charge d'un condensateur",
+      cap: "Charge d'un condensateur à travers un résistor. La tangente à l'origine coupe l'asymptote <i>u</i> = <i>E</i> à la date <i>t</i> = <i>τ</i>" + NB + ": c'est la méthode de la tangente.",
+      alt: "Courbe de charge d'un condensateur, tension uC en fonction du temps, avec la tangente à l'origine et la constante de temps tau égale à 10 ms.",
+      xr: [0, 50], yr: [0, 7], xt: [0, 10, 20, 30, 40, 50], yt: [0, 1, 2, 3, 4, 5, 6, 7],
+      xl: '<tspan>t</tspan><tspan class="up"> (ms)</tspan>', yl: '<tspan>u</tspan><tspan class="up" baseline-shift="sub" font-size="14">C</tspan><tspan class="up"> (V)</tspan>',
+      f: function (t) { return 6 * (1 - Math.exp(-t / 10)); }, n: 220,
+      annot: function (sx, sy) {
+        var E = 6, tau = 10, u = E * (1 - Math.exp(-1));
+        return '<line class="a-dash" x1="' + sx(0) + '" y1="' + sy(E) + '" x2="' + sx(50) + '" y2="' + sy(E) + '"/>' +
+          '<line class="a-red" x1="' + sx(0) + '" y1="' + sy(0) + '" x2="' + sx(7 / 0.6) + '" y2="' + sy(7) + '"/>' +
+          '<line class="a-dash" x1="' + sx(tau) + '" y1="' + sy(0) + '" x2="' + sx(tau) + '" y2="' + sy(E) + '"/>' +
+          '<line class="a-dash" x1="' + sx(0) + '" y1="' + sy(u) + '" x2="' + sx(tau) + '" y2="' + sy(u) + '"/>' +
+          '<circle class="a-dot" cx="' + sx(tau) + '" cy="' + sy(u) + '" r="4.5"/>' +
+          '<circle class="a-dot" cx="' + sx(tau) + '" cy="' + sy(E) + '" r="4.5"/>' +
+          '<text class="a-math" x="' + sx(12.6) + '" y="' + (sy(E) - 12) + '">τ = <tspan>RC</tspan><tspan class="up"> ≈ 10 ms</tspan></text>' +
+          '<text class="a-math a-ink" x="' + sx(49.5) + '" y="' + (sy(E) - 12) + '" text-anchor="end">E<tspan class="up"> = 6,0 V</tspan></text>' +
+          '<text class="a-math" x="' + sx(0.35) + '" y="' + (sy(u) - 9) + '" font-size="18"><tspan class="up">0,63</tspan>E</text>' +
+          '<text class="a-hand" x="' + sx(49.5) + '" y="' + (sy(1.0)) + '" text-anchor="end">méthode de la tangente</text>';
+      }
+    },
+    ph: {
+      code: "C8", title: "Dosage d'un acide faible par une base forte",
+      cap: "Dosage de 20 mL d'acide éthanoïque à 0,10 mol/L par la soude à 0,10 mol/L. À la demi-équivalence, pH = p<i>K</i><sub>a</sub>" + NB + "; au point d'équivalence, la solution est basique.",
+      alt: "Courbe de dosage pH-métrique de l'acide éthanoïque par la soude, avec la demi-équivalence à pH 4,8 et le point d'équivalence à 20 mL.",
+      xr: [0, 50], yr: [0, 14], xt: [0, 10, 20, 30, 40, 50], yt: [0, 2, 4, 6, 8, 10, 12, 14],
+      xl: '<tspan>V</tspan><tspan class="up" baseline-shift="sub" font-size="14">b</tspan><tspan class="up"> (mL)</tspan>', yl: '<tspan class="up">pH</tspan>',
+      f: pHAt, n: 260, dense: [18.5, 21.5, 140],
+      annot: function (sx, sy) {
+        var pk = 4.8;
+        return '<line class="a-dash" x1="' + sx(10) + '" y1="' + sy(0) + '" x2="' + sx(10) + '" y2="' + sy(pk) + '"/>' +
+          '<line class="a-dash" x1="' + sx(0) + '" y1="' + sy(pk) + '" x2="' + sx(10) + '" y2="' + sy(pk) + '"/>' +
+          '<circle class="a-dot" cx="' + sx(10) + '" cy="' + sy(pk) + '" r="4.5"/>' +
+          '<text class="a-math" x="' + sx(0.9) + '" y="' + (sy(pk) - 30) + '"><tspan class="up">pH = p</tspan>K<tspan class="up" baseline-shift="sub" font-size="14">a</tspan><tspan class="up"> = 4,8</tspan></text>' +
+          '<line class="a-dash" x1="' + sx(20) + '" y1="' + sy(0) + '" x2="' + sx(20) + '" y2="' + sy(PHE) + '"/>' +
+          '<line class="a-dash" x1="' + sx(0) + '" y1="' + sy(PHE) + '" x2="' + sx(20) + '" y2="' + sy(PHE) + '"/>' +
+          '<circle class="a-dot" cx="' + sx(20) + '" cy="' + sy(PHE) + '" r="4.5"/>' +
+          '<text class="a-math" x="' + sx(21.6) + '" y="' + (sy(PHE) + 8) + '">E<tspan class="up"> (pH ≈ ' + fmt(PHE, 1) + ')</tspan></text>' +
+          '<text class="a-math" x="' + (sx(20) + 8) + '" y="' + (sy(0) - 10) + '">V<tspan class="up" baseline-shift="sub" font-size="14">bE</tspan><tspan class="up"> = 20 mL</tspan></text>' +
+          '<text class="a-hand" x="' + sx(22.6) + '" y="' + sy(9.95) + '">saut de pH</text>';
+      }
+    },
+    osc: {
+      code: "P11", title: "Oscillations libres d'un pendule élastique",
+      cap: "Solide de 100 g accroché à un ressort de raideur 10 N/m, écarté de 4 cm puis lâché sans vitesse. La période propre ne dépend que de <i>m</i> et de <i>k</i>.",
+      alt: "Courbe sinusoïdale de l'élongation x en fonction du temps, amplitude 4 cm, période propre 0,63 s.",
+      xr: [0, 2], yr: [-7, 7], xt: [0, 0.4, 0.8, 1.2, 1.6, 2], yt: [-6, -4, -2, 0, 2, 4, 6], xBottom: true,
+      xl: '<tspan>t</tspan><tspan class="up"> (s)</tspan>', yl: '<tspan>x</tspan><tspan class="up"> (cm)</tspan>',
+      f: function (t) { return 4 * Math.cos(2 * Math.PI * t / (2 * Math.PI * 0.1)); }, n: 320,
+      annot: function (sx, sy) {
+        var T0 = 2 * Math.PI * 0.1, ya = 5.5;
+        return '<line class="a-dash" x1="' + sx(0) + '" y1="' + sy(4) + '" x2="' + sx(2) + '" y2="' + sy(4) + '"/>' +
+          '<line class="a-dash" x1="' + sx(0) + '" y1="' + sy(-4) + '" x2="' + sx(2) + '" y2="' + sy(-4) + '"/>' +
+          '<line class="a-red" x1="' + (sx(0) + 2) + '" y1="' + sy(ya) + '" x2="' + (sx(T0) - 2) + '" y2="' + sy(ya) + '"/>' +
+          '<path class="a-dot" d="M' + (sx(0) + 1) + ' ' + sy(ya) + 'l9 -5v10z"/>' +
+          '<path class="a-dot" d="M' + (sx(T0) - 1) + ' ' + sy(ya) + 'l-9 -5v10z"/>' +
+          '<line class="a-dash" x1="' + sx(T0) + '" y1="' + sy(4) + '" x2="' + sx(T0) + '" y2="' + sy(ya + 0.4) + '"/>' +
+          '<text class="a-math" x="' + sx(T0 / 2) + '" y="' + (sy(ya) - 10) + '" text-anchor="middle">T<tspan class="up" baseline-shift="sub" font-size="14">0</tspan><tspan class="up"> ≈ 0,63 s</tspan></text>' +
+          '<text class="a-math a-ink" x="' + sx(0.74) + '" y="' + (sy(4) - 9) + '">X<tspan class="up" baseline-shift="sub" font-size="14">m</tspan><tspan class="up"> = 4 cm</tspan></text>' +
+          '<text class="a-math" x="' + sx(1.97) + '" y="' + sy(-5.9) + '" text-anchor="end">T<tspan class="up" baseline-shift="sub" font-size="14">0</tspan><tspan class="up"> = 2π√(</tspan>m<tspan class="up">/</tspan>k<tspan class="up">)</tspan></text>';
+      }
+    }
+  };
+
+  function buildPlot(key) {
+    var P = PLOTS[key];
+    function sx(x) { return +(X0 + (x - P.xr[0]) / (P.xr[1] - P.xr[0]) * (X1 - X0)).toFixed(2); }
+    function sy(y) { return +(YB - (y - P.yr[0]) / (P.yr[1] - P.yr[0]) * (YB - YT)).toFixed(2); }
+    var ay = (P.yr[0] < 0 && P.yr[1] > 0) ? sy(0) : YB;
+    var s = '<svg viewBox="0 0 600 420" role="img" aria-label="' + P.alt.replace(/"/g, "&quot;") + '">';
+    s += '<defs>' +
+      '<pattern id="mm1-' + key + '" width="10" height="10" patternUnits="userSpaceOnUse" x="' + X0 + '" y="' + YT + '"><path class="g-minor" d="M10 0H0V10"/></pattern>' +
+      '<pattern id="mm5-' + key + '" width="50" height="50" patternUnits="userSpaceOnUse" x="' + X0 + '" y="' + YT + '"><path class="g-major" d="M50 0H0V50"/></pattern>' +
+      '</defs>';
+    s += '<rect x="' + X0 + '" y="' + YT + '" width="' + (X1 - X0) + '" height="' + (YB - YT) + '" fill="url(#mm1-' + key + ')"/>';
+    s += '<rect x="' + X0 + '" y="' + YT + '" width="' + (X1 - X0) + '" height="' + (YB - YT) + '" fill="url(#mm5-' + key + ')"/>';
+    s += '<rect class="g-frame" x="' + X0 + '" y="' + YT + '" width="' + (X1 - X0) + '" height="' + (YB - YT) + '"/>';
+    // graduations
+    var labelY = P.xBottom ? YB + 26 : ay + 26;
+    P.xt.forEach(function (v) {
+      s += '<line class="tick" x1="' + sx(v) + '" y1="' + (ay - 5) + '" x2="' + sx(v) + '" y2="' + (ay + 5) + '"/>';
+      if (!(P.xBottom === undefined && v === 0)) s += '<text class="tick-l" x="' + sx(v) + '" y="' + labelY + '" text-anchor="middle">' + fmt(v, (v % 1 === 0) ? 0 : 1) + '</text>';
+    });
+    P.yt.forEach(function (v) {
+      s += '<line class="tick" x1="' + (X0 - 5) + '" y1="' + sy(v) + '" x2="' + (X0 + 5) + '" y2="' + sy(v) + '"/>';
+      s += '<text class="tick-l" x="' + (X0 - 11) + '" y="' + (sy(v) + 5) + '" text-anchor="end">' + fmt(v, 0) + '</text>';
+    });
+    // axes
+    s += '<line class="axis" x1="' + X0 + '" y1="' + ay + '" x2="' + (X1 + 16) + '" y2="' + ay + '"/>';
+    s += '<path class="axis-head" d="M' + (X1 + 24) + ' ' + ay + 'l-12 -5.5v11z"/>';
+    s += '<line class="axis" x1="' + X0 + '" y1="' + YB + '" x2="' + X0 + '" y2="' + (YT - 6) + '"/>';
+    s += '<path class="axis-head" d="M' + X0 + ' ' + (YT - 14) + 'l-5.5 12h11z"/>';
+    s += '<text class="ax-l" x="' + (X1 + 26) + '" y="' + (ay - 12) + '" text-anchor="end">' + P.xl + '</text>';
+    s += '<text class="ax-l" x="' + (X0 + 12) + '" y="' + (YT + 2) + '">' + P.yl + '</text>';
+    // courbe
+    var xs = [], i, n = P.n;
+    for (i = 0; i <= n; i++) xs.push(P.xr[0] + (P.xr[1] - P.xr[0]) * i / n);
+    if (P.dense) { for (i = 0; i <= P.dense[2]; i++) xs.push(P.dense[0] + (P.dense[1] - P.dense[0]) * i / P.dense[2]); xs.sort(function (a, b) { return a - b; }); }
+    var d = "";
+    xs.forEach(function (x, k) { d += (k ? "L" : "M") + sx(x) + " " + sy(P.f(x)); });
+    s += '<path class="c-guide" d="' + d + '"/>';
+    s += '<path class="c-ink" pathLength="1" d="' + d + '"/>';
+    s += P.annot(sx, sy);
+    s += '</svg>';
+    return s;
+  }
+  var plotBox = $("#plot");
+  function renderPlot(key, animate) {
+    var P = PLOTS[key];
+    plotBox.innerHTML = buildPlot(key);
+    $("#plot-code").textContent = P.code;
+    $("#plot-title").textContent = P.title;
+    $("#plot-cap").innerHTML = P.cap;
+    if (animate && !reduceMotion) { plotBox.classList.remove("drawing"); void plotBox.offsetWidth; plotBox.classList.add("drawing"); }
+  }
+  var tabs = $$(".plot-tabs [role=tab]");
+  function selectTab(btn, focus) {
+    tabs.forEach(function (t) { var on = t === btn; t.setAttribute("aria-selected", String(on)); t.tabIndex = on ? 0 : -1; });
+    if (focus) btn.focus();
+    renderPlot(btn.getAttribute("data-plot"), true);
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () { selectTab(t, false); });
+    t.addEventListener("keydown", function (e) {
+      var j = null;
+      if (e.key === "ArrowRight") j = (i + 1) % tabs.length;
+      if (e.key === "ArrowLeft") j = (i - 1 + tabs.length) % tabs.length;
+      if (j !== null) { e.preventDefault(); selectTab(tabs[j], true); }
+    });
+  });
+  renderPlot("rc", true);
+
+  /* ---------- Programme : chapitres ---------- */
+  function V(s) { return '<span class="vec"><i>' + s + '</i></span>'; }
+  function FR(a, b) { return '<span class="frac"><span>' + a + '</span><span>' + b + '</span></span>'; }
+  function SQ(s) { return '<span class="sqrt">√<span class="rad">' + s + '</span></span>'; }
+  var CH = [
+    { c: "P1", n: "Cinématique", t: "Cinématique du point", s: V("v"), f: "<i>v</i> = " + FR("d<i>x</i>", "d<i>t</i>") + "&emsp;<i>a</i> = " + FR("d<i>v</i>", "d<i>t</i>"), d: "Repérer un mobile, écrire ses équations horaires, calculer sa vitesse et son accélération." },
+    { c: "P2", n: "Bases de la dynamique", t: "Bases de la dynamique", s: "Σ" + V("F"), f: "Σ" + V("F") + "<sub>ext</sub> = <i>m</i>" + V("a") + "<sub>G</sub>", d: "Le théorème du centre d'inertie et le théorème de l'énergie cinétique, les deux outils de toute la mécanique." },
+    { c: "P3", n: "Applications", t: "Applications des bases de la dynamique", s: V("g"), f: "<i>y</i> = −" + FR("<i>g</i>", "2<i>v</i><sub>0</sub><sup>2</sup>cos<sup>2</sup><i>α</i>") + "<i>x</i><sup>2</sup> + <i>x</i> tan <i>α</i>", d: "Projectile, plan incliné, mouvement circulaire" + NB + ": les lois de Newton appliquées à des situations concrètes." },
+    { c: "P4", n: "Gravitation", t: "Gravitation universelle", s: "<i>G</i>", f: "<i>F</i> = <i>G</i>" + FR("<i>mM</i>", "<i>r</i><sup>2</sup>") + "&emsp;<i>v</i> = " + SQ("<i>GM</i>/<i>r</i>"), d: "Attraction entre deux corps, champ de gravitation, mouvement des satellites autour de la Terre." },
+    { c: "P5", n: "Champ magnétique", t: "Champ magnétique des courants", s: V("B"), f: "<i>B</i> = <i>μ</i><sub>0</sub>" + FR("<i>N</i>", "<i>ℓ</i>") + "<i>I</i>", d: "Champ créé par un aimant, par un fil, par une bobine" + NNB + "; le solénoïde et son champ uniforme." },
+    { c: "P6", n: "Particule chargée", t: "Mouvement d'une particule chargée dans un champ magnétique", s: "<i>q</i>", f: "<i>R</i> = " + FR("<i>mv</i>", "|<i>q</i>|<i>B</i>"), d: "Force de Lorentz, trajectoire circulaire, spectrographe de masse et cyclotron." },
+    { c: "P7", n: "Loi de Laplace", t: "Loi de Laplace", s: "<i>Iℓ</i>", f: "<i>F</i> = <i>IℓB</i> sin <i>α</i>", d: "Force exercée sur un conducteur parcouru par un courant dans un champ magnétique" + NB + ": rails de Laplace, haut-parleur, moteur." },
+    { c: "P8", n: "Induction, dipôle RL", t: "Induction magnétique, étude d'un dipôle RL", s: "<i>e</i>", f: "<i>e</i> = −" + FR("dΦ", "d<i>t</i>") + "&emsp;<i>τ</i> = " + FR("<i>L</i>", "<i>R</i>"), d: "Flux magnétique, loi de Lenz, auto-induction et établissement du courant dans une bobine." },
+    { c: "P9", n: "Dipôle RC", t: "Étude du dipôle RC", s: "<i>τ</i>", f: "<i>u</i><sub>C</sub> = <i>E</i>(1 − e<sup>−<i>t</i>/<i>τ</i></sup>)&emsp;<i>τ</i> = <i>RC</i>", d: "Charge et décharge d'un condensateur, constante de temps, énergie emmagasinée." },
+    { c: "P10", n: "Oscillations électriques", t: "Oscillations électriques libres et forcées", s: "<i>LC</i>", f: "<i>T</i><sub>0</sub> = 2π" + SQ("<i>LC</i>"), d: "Oscillations libres d'un circuit LC, puis oscillations forcées et résonance d'intensité dans un circuit RLC." },
+    { c: "P11", n: "Oscillations mécaniques", t: "Oscillations mécaniques libres", s: "<i>T</i><sub>0</sub>", f: "<i>T</i><sub>0</sub> = 2π" + SQ("<i>m</i>/<i>k</i>"), d: "Pendule élastique et pendule pesant" + NB + ": équation différentielle, période propre, énergie mécanique." },
+    { c: "P12", n: "Interférences", t: "Interférences lumineuses", s: "<i>λ</i>", f: "<i>i</i> = " + FR("<i>λD</i>", "<i>a</i>"), d: "Fentes de Young, franges brillantes et sombres, interfrange" + NB + ": la lumière se comporte comme une onde." },
+    { c: "P13", n: "Effet photoélectrique", t: "Effet photoélectrique", s: "<i>hν</i>", f: "<i>E</i><sub>c max</sub> = <i>h</i>(<i>ν</i> − <i>ν</i><sub>0</sub>)", d: "Fréquence seuil, travail d'extraction, énergie du photon" + NB + ": la lumière se comporte aussi comme un flux de particules." },
+    { c: "P14", n: "Atome d'hydrogène", t: "Niveaux d'énergie de l'atome", s: "<i>E</i><sub><i>n</i></sub>", f: "<i>E</i><sub><i>n</i></sub> = −" + FR("13,6", "<i>n</i><sup>2</sup>") + " eV", d: "Niveaux d'énergie de l'atome d'hydrogène, spectres d'émission et d'absorption, série de Balmer." },
+    { c: "P15", n: "Réactions nucléaires", t: "Réactions nucléaires", s: "<i>t</i><sub>1/2</sub>", f: "<i>N</i>(<i>t</i>) = <i>N</i><sub>0</sub> e<sup>−<i>λt</i></sup>&emsp;<i>t</i><sub>1/2</sub> = " + FR("ln 2", "<i>λ</i>"), d: "Radioactivité, loi de décroissance, demi-vie, fission et fusion, énergie de liaison." },
+    { c: "C1", n: "Alcools", t: "Les alcools", s: "OH", f: "R-CH<sub>2</sub>OH → R-CHO → R-COOH", d: "Classes d'alcools, oxydation ménagée, tests des aldéhydes et des cétones." },
+    { c: "C2", n: "Amines", t: "Les amines", s: "NH<sub>2</sub>", f: "R-NH<sub>2</sub> + H<sub>2</sub>O ⇄ R-NH<sub>3</sub><sup>+</sup> + HO<sup>−</sup>", d: "Nomenclature et classes d'amines, caractère basique et caractère nucléophile de l'atome d'azote." },
+    { c: "C3", n: "Acides carboxyliques", t: "Acides carboxyliques et dérivés", s: "COOH", f: "acide + alcool ⇄ ester + eau", d: "Estérification et hydrolyse, chlorures d'acyle, anhydrides d'acide, amides, saponification." },
+    { c: "C4", n: "Cinétique chimique", t: "Cinétique chimique", s: "<i>v</i>", f: "<i>v</i>(<i>t</i>) = " + FR("d[P]", "d<i>t</i>"), d: "Vitesse de formation et de disparition, facteurs cinétiques, temps de demi-réaction, lecture de tangentes." },
+    { c: "C5", n: "pH, indicateurs", t: "Autoprotolyse de l'eau, pH, indicateurs colorés", s: "pH", f: "<i>K</i><sub>e</sub> = [H<sub>3</sub>O<sup>+</sup>][HO<sup>−</sup>] = 10<sup>−14</sup> à 25 °C", d: "Produit ionique de l'eau, définition du pH, indicateurs colorés et zones de virage." },
+    { c: "C6", n: "Acide fort, base forte", t: "Acide fort, base forte", s: "H<sub>3</sub>O<sup>+</sup>", f: "pH = −log <i>C</i>", d: "Solutions d'acide fort et de base forte, réaction entre les deux, dosage et point d'équivalence." },
+    { c: "C7", n: "Acides et bases faibles", t: "Acides et bases faibles", s: "p<i>K</i><sub>a</sub>", f: "pH = p<i>K</i><sub>a</sub> + log" + FR("[A<sup>−</sup>]", "[AH]"), d: "Couples acide-base, constante d'acidité, classement des couples, domaines de prédominance." },
+    { c: "C8", n: "Dosages, effet tampon", t: "Réaction acide faible et base forte, effet tampon, dosage", s: "<i>V</i><sub>E</sub>", f: "à la demi-équivalence" + NB + ": pH = p<i>K</i><sub>a</sub>", d: "Courbes de dosage pH-métrique, point d'équivalence, solutions tampons et leurs propriétés." },
+    { c: "C9", n: "Acides α-aminés", t: "Acides α-aminés", s: "<i>α</i>", f: "R-CH(NH<sub>2</sub>)-COOH", d: "Structure et chiralité, représentation de Fischer, amphion, liaison peptidique." }
+  ];
+  var tp = $("#tiles-phys"), tc = $("#tiles-chim"), pd = $("#pdetail");
+  CH.forEach(function (ch) {
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "tile-btn"; b.setAttribute("aria-pressed", "false");
+    b.setAttribute("data-c", ch.c);
+    b.setAttribute("aria-label", ch.c + ", " + ch.t);
+    b.innerHTML = '<span class="code">' + ch.c + '</span><span class="sym" aria-hidden="true">' + ch.s + '</span><span class="name" aria-hidden="true">' + ch.n + '</span>';
+    b.addEventListener("click", function () { selectChapter(ch.c, true); });
+    (ch.c.charAt(0) === "P" ? tp : tc).appendChild(b);
+  });
+  function selectChapter(code, user) {
+    var ch = CH.filter(function (x) { return x.c === code; })[0];
+    $$(".tile-btn").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-c") === code)); });
+    var phys = code.charAt(0) === "P";
+    var book = phys
+      ? "Exercices corrigés dans le livre <strong>Physique Terminale S</strong>."
+      : "Exercices corrigés dans le livre <strong>Chimie Terminale S2</strong>, en préparation.";
+    var msg = "Bonjour M. Ba, je voudrais être aidé(e) sur le chapitre " + ch.c + " (" + ch.t + ").";
+    pd.innerHTML =
+      '<div class="banner"><span class="code">' + ch.c + '</span><span class="title">' + ch.t + '</span></div>' +
+      '<div class="pd-body">' +
+        '<div class="pd-formula"><span>' + ch.f + '</span></div>' +
+        '<div class="pd-text"><p>' + ch.d + '</p><p class="pd-book">' + book + '</p>' +
+        '<div class="btn-row"><a class="btn btn-ghost btn-sm" href="' + wa(msg) + '" target="_blank" rel="noopener">Travailler ce chapitre avec M. Ba</a></div></div>' +
+      '</div>';
+    if (user && window.innerWidth < 920) {
+      var r = pd.getBoundingClientRect();
+      if (r.top > window.innerHeight - 120) pd.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest" });
+    }
+  }
+  selectChapter("P9", false);
+
+  /* ---------- Couvertures et page d'exemple ---------- */
+  function gridLines(w, h, step, cls) {
+    var p = "";
+    for (var x = step; x < w; x += step) p += "M" + x + " 0V" + h;
+    for (var y = step; y < h; y += step) p += "M0 " + y + "H" + w;
+    return '<path class="' + cls + '" d="' + p + '"/>';
+  }
+  function rcCover() {
+    var d = "";
+    for (var t = 0; t <= 180; t += 4) d += (t ? "L" : "M") + (14 + t) + " " + (98 - 72 * (1 - Math.exp(-t / 36))).toFixed(1);
+    return d;
+  }
+  var COVERS = {
+    phys: '<div class="cover cover-phys" aria-hidden="true">' +
+      '<div class="cv-brand"><span class="cv-tile">Al</span><span>Académie Al Hassane</span></div>' +
+      '<div class="cv-main"><span class="cv-level">Terminale S</span><span class="cv-title">Physique</span><span class="cv-sub">Exercices et corrigés</span></div>' +
+      '<svg class="cv-art" viewBox="0 0 200 110">' + gridLines(200, 110, 10, "cv-grid") +
+      '<path class="cv-asym" d="M14 26H196"/><path class="cv-tan" d="M14 98L56 14"/><path class="cv-axis" d="M14 98H198M14 104V4"/><path class="cv-curve" d="' + rcCover() + '"/></svg>' +
+      '<div class="cv-foot"><span>Mr BA</span><span>P1 à P15</span></div></div>',
+    chim: '<div class="cover cover-chim" aria-hidden="true">' +
+      '<div class="cv-brand"><span class="cv-tile">Al</span><span>Académie Al Hassane</span></div>' +
+      '<div class="cv-main"><span class="cv-level">Terminale S2</span><span class="cv-title">Chimie</span><span class="cv-sub">Exercices et corrigés</span></div>' +
+      '<svg class="cv-art" viewBox="0 0 200 110">' +
+      '<path class="cv-mol" d="M24 84L58 64M58 64L86 80M104 80L132 64M132 64L166 84M53 62V33M63 62V33"/>' +
+      '<text class="cv-atom" x="58" y="26" text-anchor="middle">O</text><text class="cv-atom" x="95" y="88" text-anchor="middle">O</text></svg>' +
+      '<div class="cv-foot"><span>Mr BA</span><span>C1 à C9</span></div></div>',
+    dev: '<div class="cover cover-dev" aria-hidden="true">' +
+      '<span class="cv-dev-head">Sciences Physiques</span>' +
+      '<span class="cv-dev-title">Devoirs et compositions</span>' +
+      '<span class="cv-dev-sub">Terminale S2 · sujets corrigés</span>' +
+      '<span class="cv-grade">20<small>/20</small><svg viewBox="0 0 100 60" preserveAspectRatio="none"><path d="M82 9C66 1 22 1 9 18C-1 32 9 54 45 57C82 60 101 43 95 24C92 13 80 6 60 5"/></svg></span>' +
+      '<div class="cv-foot"><span>Mr BA</span><span>Académie Al Hassane</span></div></div>'
+  };
+  $$("[data-cover]").forEach(function (el) { el.innerHTML = COVERS[el.getAttribute("data-cover")]; });
+  var tpl = $("#tpl-page");
+  $$("[data-page]").forEach(function (slot) {
+    var node = tpl.content.firstElementChild.cloneNode(true);
+    if (slot.getAttribute("data-page") === "compact") node.classList.add("compact");
+    else { var note = node.querySelector(".bp-note"); if (note) note.remove(); }
+    slot.appendChild(node);
+  });
+
+  /* ---------- Formulaires vers WhatsApp ---------- */
+  function composed(box, text) {
+    box.innerHTML =
+      '<h3>Ton message est prêt</h3>' +
+      '<p>Vérifie-le, puis ouvre WhatsApp pour l\'envoyer à M. Ba.</p>' +
+      '<textarea readonly aria-label="Message préparé"></textarea>' +
+      '<div class="btn-row"><a class="btn btn-primary" target="_blank" rel="noopener">Ouvrir WhatsApp</a>' +
+      '<button class="btn btn-ghost" type="button">Copier le message</button><span class="copied" aria-live="polite"></span></div>';
+    var ta = box.querySelector("textarea"); ta.value = text;
+    box.querySelector("a").href = wa(text);
+    var out = box.querySelector(".copied");
+    box.querySelector("button").addEventListener("click", function () {
+      copyText(text, function (ok) {
+        if (!ok) { ta.focus(); ta.select(); }
+        out.textContent = ok ? "Message copié." : "Le texte est sélectionné, copie-le.";
+        setTimeout(function () { out.textContent = ""; }, 3000);
+      });
+    });
+    box.hidden = false;
+    box.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest" });
+  }
+  function val(form, name) { var el = form.elements[name]; return el ? String(el.value || "").trim() : ""; }
+  function line(label, v) { return v ? "\n" + label + NB + ": " + v : ""; }
+
+  var fi = $("#form-insc");
+  fi.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!fi.reportValidity()) return;
+    var tel = val(fi, "tel");
+    if (tel.replace(/\D/g, "").length < 8) { fi.elements.tel.setCustomValidity("Indique un numéro WhatsApp complet."); fi.reportValidity(); fi.elements.tel.setCustomValidity(""); return; }
+    var text = "Bonjour M. Ba, je souhaite inscrire un élève à l'Académie Al Hassane." +
+      line("Élève", val(fi, "nom")) + line("Classe", val(fi, "classe")) + line("Établissement", val(fi, "etab")) +
+      line("Formule", val(fi, "formule")) + line("WhatsApp", tel) + (val(fi, "msg") ? "\n\n" + val(fi, "msg") : "");
+    composed($("#out-insc"), text);
+  });
+  var fc = $("#form-contact");
+  fc.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!fc.reportValidity()) return;
+    var text = "Bonjour M. Ba," + line("Objet", val(fc, "objet")) + line("Nom", val(fc, "nom")) + line("Classe", val(fc, "classe")) + "\n\n" + val(fc, "msg");
+    composed($("#out-contact"), text);
+  });
+
+  /* ---------- Test de niveau ---------- */
+  var QUIZ = [
+    { c: "P1", q: "Un mobile se déplace sur un axe selon l'équation horaire <span class='f'><i>x</i>(<i>t</i>) = 2<i>t</i><sup>2</sup> − 4<i>t</i> + 1</span> (unités SI). À quelle date sa vitesse s'annule-t-elle" + NNB + "?",
+      o: ["<i>t</i> = 0,5 s", "<i>t</i> = 1 s", "<i>t</i> = 2 s", "<i>t</i> = 4 s"], a: 1,
+      e: "<i>v</i>(<i>t</i>) = d<i>x</i>/d<i>t</i> = 4<i>t</i> − 4, qui s'annule pour <i>t</i> = 1 s." },
+    { c: "P4", q: "Un satellite décrit une orbite circulaire de rayon <i>r</i> autour de la Terre. Si le rayon de l'orbite est multiplié par 4, sa vitesse est" + NB + ":",
+      o: ["inchangée", "multipliée par 2", "divisée par 4", "divisée par 2"], a: 3,
+      e: "<i>v</i> = √(<i>GM</i><sub>T</sub>/<i>r</i>)" + NB + ": quand <i>r</i> est multiplié par 4, <i>v</i> est divisée par √4 = 2." },
+    { c: "P6", q: "Une particule de charge <i>q</i> et de masse <i>m</i> entre avec une vitesse <i>v</i> perpendiculaire à un champ magnétique uniforme <i>B</i>. Le rayon de sa trajectoire circulaire est" + NB + ":",
+      o: ["<i>R</i> = " + FR("|<i>q</i>|<i>B</i>", "<i>mv</i>"), "<i>R</i> = " + FR("<i>mB</i>", "|<i>q</i>|<i>v</i>"), "<i>R</i> = " + FR("<i>mv</i>", "|<i>q</i>|<i>B</i>"), "<i>R</i> = " + FR("|<i>q</i>|<i>v</i>", "<i>mB</i>")], a: 2,
+      e: "La force magnétique, d'intensité |<i>q</i>|<i>vB</i>, joue le rôle de force centripète" + NB + ": |<i>q</i>|<i>vB</i> = <i>mv</i><sup>2</sup>/<i>R</i>, d'où <i>R</i> = <i>mv</i>/(|<i>q</i>|<i>B</i>)." },
+    { c: "P9", q: "Un condensateur de capacité <i>C</i> = 10 µF se charge à travers un résistor de résistance <i>R</i> = 1,0 kΩ. La constante de temps du circuit vaut" + NB + ":",
+      o: ["0,1 ms", "1 ms", "10 ms", "100 ms"], a: 2,
+      e: "<i>τ</i> = <i>RC</i> = 1,0×10<sup>3</sup> × 10×10<sup>−6</sup> = 1,0×10<sup>−2</sup> s, soit 10 ms." },
+    { c: "P11", q: "Un pendule élastique horizontal est formé d'un solide de masse <i>m</i> = 100 g et d'un ressort de raideur <i>k</i> = 10 N/m. Sa période propre vaut environ" + NB + ":",
+      o: ["0,063 s", "0,63 s", "2,0 s", "6,3 s"], a: 1,
+      e: "<i>T</i><sub>0</sub> = 2π√(<i>m</i>/<i>k</i>) = 2π√(0,100/10) = 2π × 0,10 ≈ 0,63 s. Pense à convertir la masse en kilogrammes." },
+    { c: "P12", q: "Fentes de Young" + NB + ": <i>λ</i> = 600 nm, distance entre les fentes <i>a</i> = 1,0 mm, distance entre les fentes et l'écran <i>D</i> = 2,0 m. L'interfrange vaut" + NB + ":",
+      o: ["0,12 mm", "0,30 mm", "1,2 mm", "12 mm"], a: 2,
+      e: "<i>i</i> = <i>λD</i>/<i>a</i> = 600×10<sup>−9</sup> × 2,0 / 1,0×10<sup>−3</sup> = 1,2×10<sup>−3</sup> m, soit 1,2 mm." },
+    { c: "P14", q: "Les niveaux d'énergie de l'atome d'hydrogène sont <i>E</i><sub><i>n</i></sub> = −13,6/<i>n</i><sup>2</sup> (en eV). Lors de la transition du niveau <i>n</i> = 3 au niveau <i>n</i> = 2, l'atome émet un photon d'énergie" + NB + ":",
+      o: ["1,89 eV", "3,40 eV", "10,2 eV", "12,1 eV"], a: 0,
+      e: "<i>E</i> = <i>E</i><sub>3</sub> − <i>E</i><sub>2</sub> = −1,51 − (−3,40) = 1,89 eV. C'est la raie rouge de la série de Balmer, vers 656 nm." },
+    { c: "P15", q: "La demi-vie de l'iode 131 est de 8 jours. Au bout de 24 jours, la fraction de noyaux non désintégrés est" + NB + ":",
+      o: ["1/3", "1/4", "1/8", "1/24"], a: 2,
+      e: "24 jours correspondent à 3 demi-vies" + NB + ": <i>N</i> = <i>N</i><sub>0</sub>/2<sup>3</sup> = <i>N</i><sub>0</sub>/8." },
+    { c: "C1", q: "L'oxydation ménagée d'un alcool secondaire, même avec un oxydant en excès, conduit à" + NB + ":",
+      o: ["un aldéhyde", "un acide carboxylique", "un ester", "une cétone"], a: 3,
+      e: "Un alcool secondaire donne une cétone, et l'oxydation ménagée s'arrête là. C'est l'alcool primaire qui donne un aldéhyde, puis un acide carboxylique." },
+    { c: "C8", q: "Lors du dosage d'un acide faible par une base forte, à la demi-équivalence" + NB + ":",
+      o: ["pH = p<i>K</i><sub>a</sub>", "pH = 7", "pH = p<i>K</i><sub>a</sub> + 1", "pH = 14 − p<i>K</i><sub>a</sub>"], a: 0,
+      e: "À la demi-équivalence, [A<sup>−</sup>] = [AH], donc pH = p<i>K</i><sub>a</sub> + log 1 = p<i>K</i><sub>a</sub>. C'est ainsi qu'on lit le p<i>K</i><sub>a</sub> sur une courbe de dosage." }
+  ];
+  function chap(code) { return CH.filter(function (x) { return x.c === code; })[0]; }
+  var qList = $("#quiz-chapters");
+  QUIZ.forEach(function (q) {
+    var li = document.createElement("li"), ch = chap(q.c);
+    li.innerHTML = '<span class="code' + (q.c.charAt(0) === "C" ? " c" : "") + '">' + q.c + '</span><span>' + ch.n + '</span>';
+    qList.appendChild(li);
+  });
+
+  var quizBox = $("#quiz"), state;
+  function startQuiz(focus) { state = { i: 0, answers: [] }; renderQ(focus); }
+  function barHTML() {
+    var h = '<div class="q-bar" aria-hidden="true">';
+    for (var k = 0; k < QUIZ.length; k++) {
+      var cls = k < state.answers.length ? (state.answers[k] ? "ok" : "ko") : (k === state.i ? "cur" : "");
+      h += '<span class="' + cls + '"></span>';
+    }
+    return h + '</div>';
+  }
+  function renderQ(focus) {
+    var q = QUIZ[state.i], ch = chap(q.c), letters = ["A", "B", "C", "D"];
+    var h = '<div class="q-top"><span>Question ' + (state.i + 1) + ' sur ' + QUIZ.length + '</span><span class="q-chap">' + q.c + ' · ' + ch.n + '</span></div>' + barHTML() +
+      '<h2 class="q-text" id="q-text" tabindex="-1">' + q.q + '</h2><div class="q-opts" role="group" aria-labelledby="q-text">';
+    q.o.forEach(function (o, k) {
+      h += '<button type="button" class="q-opt" data-k="' + k + '"><span class="k">' + letters[k] + '</span><span class="v">' + o + '</span><span class="mk" aria-hidden="true"></span></button>';
+    });
+    h += '</div><div class="q-fb" id="q-fb" hidden><span class="lbl">Correction</span><p></p></div>' +
+      '<div class="q-actions"><button type="button" class="btn btn-primary" id="q-next" hidden>' + (state.i === QUIZ.length - 1 ? "Voir ma note" : "Question suivante") + '</button></div>';
+    quizBox.innerHTML = h;
+    $$(".q-opt", quizBox).forEach(function (b) { b.addEventListener("click", function () { answer(+b.getAttribute("data-k")); }); });
+    $("#q-next", quizBox).addEventListener("click", function () {
+      state.i++;
+      if (state.i < QUIZ.length) renderQ(true); else renderResult();
+    });
+    if (focus) { var t = $("#q-text", quizBox); try { t.focus({ preventScroll: true }); } catch (e) {} }
+  }
+  function answer(k) {
+    var q = QUIZ[state.i], ok = k === q.a;
+    state.answers.push(ok);
+    $$(".q-opt", quizBox).forEach(function (b) {
+      var j = +b.getAttribute("data-k");
+      b.disabled = true;
+      if (j === q.a) { b.classList.add("is-right"); b.querySelector(".mk").textContent = "juste"; }
+      if (j === k && !ok) { b.classList.add("is-wrong"); b.querySelector(".mk").textContent = "faux"; }
+    });
+    var fb = $("#q-fb", quizBox);
+    fb.querySelector(".lbl").textContent = ok ? "Bonne réponse" : "Correction";
+    fb.querySelector("p").innerHTML = q.e;
+    fb.hidden = false;
+    var bar = $(".q-bar", quizBox); bar.outerHTML = barHTML();
+    var nx = $("#q-next", quizBox); nx.hidden = false; nx.focus({ preventScroll: true });
+  }
+  function mention(n) {
+    if (n >= 16) return ["Très bien", "Tu maîtrises les bases du programme. L'encadrement t'aidera à viser la mention au BAC."];
+    if (n >= 14) return ["Bien", "Bon travail. Quelques chapitres méritent encore une reprise."];
+    if (n >= 12) return ["Assez bien", "Les bases sont là. Il reste des points à consolider avant les compositions."];
+    if (n >= 10) return ["Passable", "C'est juste. Reprends les chapitres ci-dessous avant la prochaine évaluation."];
+    return ["À reprendre", "Pas d'inquiétude" + NB + ": on reprend chapitre par chapitre, avec méthode."];
+  }
+  function renderResult() {
+    var good = state.answers.filter(Boolean).length, note = good * 2, m = mention(note);
+    var miss = [];
+    state.answers.forEach(function (ok, k) { if (!ok) miss.push(QUIZ[k].c); });
+    var list = miss.length
+      ? miss.map(function (c) { return '<li><span class="code">' + c + '</span><span>' + chap(c).t + '</span></li>'; }).join("")
+      : '<li>Aucun chapitre à revoir sur ce test. Bravo.</li>';
+    var waText = "Bonjour M. Ba, j'ai fait le test de niveau de Terminale S sur le site de l'Académie Al Hassane." +
+      "\nMa note" + NB + ": " + note + "/20" +
+      (miss.length ? "\nChapitres à revoir" + NB + ": " + miss.map(function (c) { return c + " " + chap(c).n; }).join(", ") : "") +
+      "\nJe voudrais des conseils pour la suite.";
+    quizBox.innerHTML =
+      '<div class="result">' +
+        '<div class="q-top" style="width:100%"><span>Résultat du test</span><span class="q-chap">' + good + ' bonne' + (good > 1 ? 's' : '') + ' réponse' + (good > 1 ? 's' : '') + ' sur 10</span></div>' +
+        '<div class="grade" role="img" aria-label="Note : ' + note + ' sur 20"><span class="n">' + note + '</span><span class="d">/20</span>' +
+        '<svg viewBox="0 0 200 100" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M168 18C140 4 50 2 20 30C0 52 20 88 90 94C160 99 200 70 190 40C184 22 160 10 120 9"/></svg></div>' +
+        '<p class="mention" id="q-result" tabindex="-1">' + m[0] + '</p><p>' + m[1] + '</p>' +
+        '<h3>Chapitres à revoir</h3><ul class="r-list">' + list + '</ul>' +
+        '<div class="btn-row"><a class="btn btn-primary" target="_blank" rel="noopener" href="' + wa(waText) + '">Envoyer mon résultat à M. Ba</a>' +
+        '<button type="button" class="btn btn-ghost" id="q-restart">Recommencer le test</button></div>' +
+      '</div>';
+    $("#q-restart", quizBox).addEventListener("click", function () { startQuiz(true); });
+    try { $("#q-result", quizBox).focus({ preventScroll: true }); } catch (e) {}
+  }
+  startQuiz(false);
+
+  /* ---------- Démarrage ---------- */
+  route(false);
+})();
+</script>
+</body>
+</html>

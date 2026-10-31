@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.academie-al-hassane.com/sitemap.xml
